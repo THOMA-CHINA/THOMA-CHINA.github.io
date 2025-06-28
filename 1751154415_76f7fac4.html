@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #3498db;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+        .warning {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .good {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>总体睡眠评分</h2>
+        <div class="score">78/100</div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 78%">78%</div>
+        </div>
+        <p>您的睡眠质量中等偏上，但仍有改善空间。主要问题在于深度睡眠比例不足和夜间血氧波动。</p>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠结构分析</h2>
+        <table>
+            <tr>
+                <th>睡眠阶段</th>
+                <th>时长(分钟)</th>
+                <th>占比</th>
+                <th>理想范围</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>清醒时间</td>
+                <td>4</td>
+                <td>1.0%</td>
+                <td>&lt;5%</td>
+                <td class="good">优秀</td>
+            </tr>
+            <tr>
+                <td>核心睡眠</td>
+                <td>202</td>
+                <td>51.8%</td>
+                <td>45-55%</td>
+                <td class="good">正常</td>
+            </tr>
+            <tr>
+                <td>深度睡眠</td>
+                <td>63</td>
+                <td>16.2%</td>
+                <td>20-25%</td>
+                <td class="warning">不足</td>
+            </tr>
+            <tr>
+                <td>快速动眼睡眠</td>
+                <td>121</td>
+                <td>31.0%</td>
+                <td>20-25%</td>
+                <td class="warning">偏高</td>
+            </tr>
+        </table>
+        
+        <h3>详细分析：</h3>
+        <p>1. <strong>深度睡眠不足</strong>：您的深度睡眠仅占16.2%，低于理想的20-25%。深度睡眠对体力恢复和免疫系统功能至关重要。</p>
+        <p>2. <strong>快速动眼睡眠偏高</strong>：您的REM睡眠占比31%，略高于正常范围。这可能与压力或情绪波动有关。</p>
+        <p>3. <strong>睡眠连续性</strong>：您的睡眠结构显示多次微觉醒(共4次)，但持续时间都很短(1分钟)，对整体睡眠影响较小。</p>
+    </div>
+    
+    <div class="card">
+        <h2>血氧数据分析</h2>
+        <p>您的血氧饱和度大部分时间在正常范围(95-100%)，但观察到以下异常：</p>
+        <ul>
+            <li>6月29日06:50记录到<span class="warning">91%</span>的低血氧值</li>
+            <li>6月28日01:51记录到<span class="warning">92%</span>的低血氧值</li>
+            <li>6月28日12:29记录到<span class="warning">92%</span>的低血氧值</li>
+        </ul>
+        <p>这些短暂的血氧下降可能与呼吸暂停或体位变化有关，建议进一步观察。</p>
+    </div>
+    
+    <div class="card">
+        <h2>改善建议</h2>
+        <h3>增加深度睡眠：</h3>
+        <ul>
+            <li>保持规律的睡眠时间表，每天同一时间上床和起床</li>
+            <li>睡前1小时避免使用电子设备，蓝光会抑制褪黑素分泌</li>
+            <li>进行适度的有氧运动，但避免睡前3小时内剧烈运动</li>
+            <li>控制咖啡因摄入，下午2点后避免饮用含咖啡因饮料</li>
+        </ul>
+        
+        <h3>优化REM睡眠：</h3>
+        <ul>
+            <li>练习放松技巧如冥想或深呼吸，减少压力</li>
+            <li>保持卧室温度在18-22°C之间，有利于REM睡眠调节</li>
+            <li>避免睡前饮酒，酒精会干扰REM睡眠周期</li>
+        </ul>
+        
+        <h3>改善血氧水平：</h3>
+        <ul>
+            <li>尝试侧卧睡姿，可减少呼吸暂停风险</li>
+            <li>如有打鼾症状，建议咨询医生进行睡眠呼吸评估</li>
+            <li>保持卧室空气流通，考虑使用加湿器</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>潜在风险提示</h2>
+        <p>1. 您的深度睡眠不足可能影响日间精力和免疫功能</p>
+        <p>2. 观察到的血氧下降值得关注，如果频繁出现低于90%的情况，建议进行专业睡眠呼吸评估</p>
+        <p>3. REM睡眠比例偏高可能与情绪压力有关，建议关注心理健康</p>
+    </div>
+    
+    <div class="card">
+        <h2>监测建议</h2>
+        <p>建议继续监测睡眠1-2周，特别关注：</p>
+        <ul>
+            <li>深度睡眠时长变化</li>
+            <li>血氧低于93%的发生频率</li>
+            <li>夜间觉醒次数</li>
+        </ul>
+        <p>如果上述指标没有改善或恶化，建议咨询睡眠专科医生。</p>
+    </div>
+</body>
+</html>
