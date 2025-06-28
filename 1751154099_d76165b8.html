@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #f5f7fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a6baf;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .warning {
+            color: #e53935;
+            font-weight: bold;
+        }
+        .good {
+            color: #43a047;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <p>报告日期: 2025年6月29日</p>
+    </div>
+
+    <div class="section">
+        <h2>1. 总体睡眠评分</h2>
+        <p>由于缺乏具体的睡眠阶段数据，我们主要基于血氧数据进行评估:</p>
+        <p class="score">血氧稳定性评分: 75/100</p>
+        <p>您的血氧水平总体良好，但存在一些波动需要注意。</p>
+    </div>
+
+    <div class="section">
+        <h2>2. 血氧数据分析</h2>
+        <table>
+            <tr>
+                <th>指标</th>
+                <th>数值</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>平均血氧水平</td>
+                <td>96.1%</td>
+                <td class="good">正常范围</td>
+            </tr>
+            <tr>
+                <td>最低血氧水平</td>
+                <td>92%</td>
+                <td>需关注</td>
+            </tr>
+            <tr>
+                <td>血氧波动次数</td>
+                <td>5次(低于94%)</td>
+                <td>轻度异常</td>
+            </tr>
+        </table>
+        
+        <h3>关键发现:</h3>
+        <ul>
+            <li>观察到多次血氧下降至92-93%的情况，特别是在凌晨1:51和中午12:29</li>
+            <li>夜间血氧波动较为明显，从92%到100%不等</li>
+            <li>日间血氧水平总体稳定在95%以上</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. 潜在风险</h2>
+        <div class="highlight">
+            <h3>需关注的风险因素:</h3>
+            <ul>
+                <li>夜间血氧波动可能提示<span class="warning">轻度睡眠呼吸问题</span></li>
+                <li>92%的最低血氧水平接近临床关注阈值(90%)</li>
+                <li>血氧波动可能与体位变化或呼吸道部分阻塞有关</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. 科学建议</h2>
+        <h3>改善方案:</h3>
+        <ol>
+            <li><strong>睡眠体位调整:</strong> 尝试侧卧睡眠，可减少呼吸道阻塞风险</li>
+            <li><strong>环境优化:</strong> 保持卧室空气流通，考虑使用加湿器</li>
+            <li><strong>生活习惯:</strong> 避免睡前饮酒和过度进食</li>
+            <li><strong>监测建议:</strong> 建议连续监测3-7天以确认血氧波动模式</li>
+            <li><strong>专业咨询:</strong> 如持续观察到血氧低于92%，建议咨询睡眠专科医生</li>
+        </ol>
+        
+        <h3>进一步评估建议:</h3>
+        <p>由于缺乏睡眠阶段数据，建议:</p>
+        <ul>
+            <li>记录完整的睡眠周期数据(包括REM、深睡、浅睡时间)</li>
+            <li>监测打鼾情况(如有)</li>
+            <li>记录日间嗜睡程度</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. 后续行动计划</h2>
+        <table>
+            <tr>
+                <th>行动项目</th>
+                <th>时间框架</th>
+            </tr>
+            <tr>
+                <td>调整睡眠体位</td>
+                <td>立即开始</td>
+            </tr>
+            <tr>
+                <td>连续血氧监测</td>
+                <td>3-7天</td>
+            </tr>
+            <tr>
+                <td>记录完整睡眠数据</td>
+                <td>下一睡眠周期</td>
+            </tr>
+            <tr>
+                <td>专业咨询(如需要)</td>
+                <td>1-2周内</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
