@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px;}
+        h1 {color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;}
+        h2 {color: #2980b9; margin-top: 20px;}
+        .score {font-size: 24px; font-weight: bold; color: #e74c3c;}
+        .good {color: #27ae60;}
+        .warning {color: #f39c12;}
+        .alert {color: #e74c3c;}
+        table {width: 100%; border-collapse: collapse; margin: 20px 0;}
+        th, td {border: 1px solid #ddd; padding: 8px; text-align: left;}
+        th {background-color: #f2f2f2;}
+        .recommendation {background-color: #f8f9fa; padding: 15px; border-left: 4px solid #3498db; margin: 15px 0;}
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <h2>1. 总体睡眠评分</h2>
+    <p>您的睡眠评分为: <span class="score">78/100</span> (良好)</p>
+    <p>总睡眠时间: 5小时24分钟 (324分钟)</p>
+    <p>睡眠效率: 95% (清醒时间仅5分钟)</p>
+    
+    <h2>2. 睡眠结构分析</h2>
+    <table>
+        <tr>
+            <th>睡眠阶段</th>
+            <th>时长(分钟)</th>
+            <th>占比</th>
+            <th>评估</th>
+        </tr>
+        <tr>
+            <td>核心睡眠</td>
+            <td>174</td>
+            <td>53.7%</td>
+            <td class="good">正常</td>
+        </tr>
+        <tr>
+            <td>深度睡眠</td>
+            <td>57</td>
+            <td>17.6%</td>
+            <td class="warning">略低(理想20-25%)</td>
+        </tr>
+        <tr>
+            <td>快速动眼睡眠</td>
+            <td>93</td>
+            <td>28.7%</td>
+            <td class="good">良好</td>
+        </tr>
+        <tr>
+            <td>清醒时间</td>
+            <td>5</td>
+            <td>1.5%</td>
+            <td class="good">优秀</td>
+        </tr>
+    </table>
+    
+    <div class="recommendation">
+        <h3>睡眠结构观察:</h3>
+        <ul>
+            <li>您的睡眠周期分布基本合理，但深度睡眠比例略低于理想范围</li>
+            <li>快速动眼睡眠(REM)比例良好，表明梦境睡眠充足</li>
+            <li>睡眠连续性很好，夜间觉醒次数少</li>
+        </ul>
+    </div>
+    
+    <h2>3. 血氧数据分析</h2>
+    <p>平均血氧饱和度: <span class="good">96%</span> (正常范围95-100%)</p>
+    <p>最低血氧记录: <span class="alert">92%</span> (2025年6月28日 01:51)</p>
+    
+    <div class="recommendation">
+        <h3>血氧观察:</h3>
+        <ul>
+            <li>您的血氧水平总体良好，但有短暂下降至92%的情况</li>
+            <li>血氧波动可能与睡眠姿势或呼吸模式改变有关</li>
+            <li>未发现明显的睡眠呼吸暂停模式</li>
+        </ul>
+    </div>
+    
+    <h2>4. 潜在风险提示</h2>
+    <ul>
+        <li>深度睡眠不足可能影响身体恢复和免疫系统功能</li>
+        <li>夜间血氧短暂下降值得关注，建议监测是否有打鼾或呼吸暂停症状</li>
+        <li>总睡眠时间略短于成人推荐的7-9小时</li>
+    </ul>
+    
+    <h2>5. 科学改善建议</h2>
+    <div class="recommendation">
+        <h3>增加深度睡眠:</h3>
+        <ul>
+            <li>保持规律作息，每天同一时间上床和起床</li>
+            <li>睡前1小时避免使用电子设备</li>
+            <li>适度运动(但避免睡前3小时剧烈运动)</li>
+            <li>考虑尝试白噪音或放松音乐帮助入睡</li>
+        </ul>
+        
+        <h3>改善血氧水平:</h3>
+        <ul>
+            <li>尝试侧卧睡眠姿势，避免仰卧</li>
+            <li>保持卧室空气流通，湿度适宜</li>
+            <li>如有打鼾，可咨询医生评估是否需要干预</li>
+        </ul>
+        
+        <h3>延长总睡眠时间:</h3>
+        <ul>
+            <li>尝试提前30分钟上床</li>
+            <li>午间小憩不超过30分钟</li>
+            <li>减少晚间咖啡因和酒精摄入</li>
+        </ul>
+    </div>
+    
+    <h2>6. 跟踪建议</h2>
+    <p>建议连续监测1-2周，观察睡眠模式是否稳定。如持续出现深度睡眠不足或血氧下降情况，建议咨询睡眠专科医生。</p>
+</body>
+</html>
