@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #3498db;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
+        .warning {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .good {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>睡眠概况</h2>
+        <p>总睡眠时间: <strong>5小时29分钟</strong> (329分钟)</p>
+        <p>清醒时间: <strong>5分钟</strong> (占比1.5%)</p>
+        
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 53%">核心睡眠 53%</div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 17%; background-color: #9b59b6">深度睡眠 17%</div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 28%; background-color: #e67e22">快速动眼睡眠 28%</div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠结构分析</h2>
+        <table>
+            <tr>
+                <th>睡眠阶段</th>
+                <th>时长(分钟)</th>
+                <th>占比</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>核心睡眠</td>
+                <td>174</td>
+                <td>53%</td>
+                <td class="good">正常</td>
+            </tr>
+            <tr>
+                <td>深度睡眠</td>
+                <td>57</td>
+                <td>17%</td>
+                <td class="warning">偏低(理想20-25%)</td>
+            </tr>
+            <tr>
+                <td>快速动眼睡眠</td>
+                <td>93</td>
+                <td>28%</td>
+                <td class="good">良好</td>
+            </tr>
+        </table>
+        
+        <h3>睡眠周期特点</h3>
+        <ul>
+            <li>深度睡眠主要分布在02:19-02:52和04:18-04:50两个时段</li>
+            <li>快速动眼睡眠在03:07-03:48和05:07-06:50时段较为集中</li>
+            <li>睡眠片段化程度较低，仅3次短暂清醒</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>血氧数据分析</h2>
+        <p>平均血氧饱和度: <strong>96.1%</strong></p>
+        <p>最低血氧值: <strong>92%</strong> (2025年6月28日 01:51)</p>
+        
+        <h3>血氧波动情况</h3>
+        <ul>
+            <li>夜间血氧水平总体稳定，但有3次降至93-94%</li>
+            <li>最低血氧92%出现在入睡初期，可能与体位变化有关</li>
+            <li>未发现明显血氧骤降现象，排除严重睡眠呼吸暂停</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>综合评估</h2>
+        <p>睡眠质量评分: <strong>78/100</strong></p>
+        
+        <h3>主要优势</h3>
+        <ul>
+            <li>快速动眼睡眠充足，有利于记忆巩固和情绪调节</li>
+            <li>睡眠连续性良好，清醒次数少</li>
+            <li>血氧水平总体维持在健康范围</li>
+        </ul>
+        
+        <h3>待改善方面</h3>
+        <ul>
+            <li>深度睡眠不足，可能影响身体修复功能</li>
+            <li>总睡眠时间偏短(5.5小时)，建议延长至7小时</li>
+            <li>入睡初期血氧波动值得关注</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>改善建议</h2>
+        
+        <h3>增加深度睡眠</h3>
+        <ul>
+            <li>保持规律作息，固定入睡和起床时间</li>
+            <li>睡前1小时避免使用电子设备</li>
+            <li>尝试睡前温水浴(比体温高1-2℃)，帮助体温调节</li>
+            <li>适量补充镁元素(如坚果、绿叶蔬菜)</li>
+        </ul>
+        
+        <h3>优化血氧水平</h3>
+        <ul>
+            <li>尝试侧卧睡姿，减少呼吸道阻塞风险</li>
+            <li>避免睡前3小时饮酒</li>
+            <li>保持卧室良好通风，湿度40-60%</li>
+            <li>如有打鼾症状，建议进行专业睡眠监测</li>
+        </ul>
+        
+        <h3>延长总睡眠时间</h3>
+        <ul>
+            <li>提前30分钟上床准备入睡</li>
+            <li>白天适度运动(但避免睡前3小时剧烈运动)</li>
+            <li>减少咖啡因摄入，特别是下午3点后</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>监测建议</h2>
+        <ul>
+            <li>继续监测1-2周，观察深度睡眠是否持续偏低</li>
+            <li>记录睡前活动和饮食，寻找影响睡眠质量的因素</li>
+            <li>如血氧低于90%的情况频繁出现，建议咨询呼吸科医生</li>
+        </ul>
+    </div>
+</body>
+</html>
