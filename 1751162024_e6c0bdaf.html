@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0;
+        }
+        .report-section {
+            border: 1px solid #ddd;
+            border-top: none;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .good {
+            color: #27ae60;
+        }
+        .improvement {
+            color: #e67e22;
+        }
+        .concern {
+            color: #e74c3c;
+        }
+        .sleep-stage {
+            margin-bottom: 15px;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+        .light-sleep {
+            background-color: #3498db;
+        }
+        .deep-sleep {
+            background-color: #2ecc71;
+        }
+        .rem-sleep {
+            background-color: #9b59b6;
+        }
+        .awake {
+            background-color: #e74c3c;
+        }
+        .recommendation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #4a6fa5;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <p>报告日期: 2025年6月29日</p>
+    </div>
+
+    <div class="report-section">
+        <h2>总体睡眠评分</h2>
+        <p class="score improvement">72/100</p>
+        <p>您的睡眠质量处于中等水平，有改善空间。主要优势是充足的快速动眼睡眠(REM)，但深度睡眠比例偏低，且存在多次短暂觉醒。</p>
+    </div>
+
+    <div class="report-section">
+        <h2>睡眠结构分析</h2>
+        <p>总睡眠时间: 6小时30分钟 (390分钟)</p>
+        
+        <div class="sleep-stage">
+            <h3>核心睡眠 (浅睡眠)</h3>
+            <div class="progress-container">
+                <div class="progress-bar light-sleep" style="width: 51.8%">202分钟 (51.8%)</div>
+            </div>
+            <p>浅睡眠占比略高，理想范围应为45-55%。您的浅睡眠处于正常范围上限。</p>
+        </div>
+        
+        <div class="sleep-stage">
+            <h3>深度睡眠</h3>
+            <div class="progress-container">
+                <div class="progress-bar deep-sleep" style="width: 16.2%">63分钟 (16.2%)</div>
+            </div>
+            <p>深度睡眠不足，理想范围应为20-25%。这可能影响身体恢复和免疫系统功能。</p>
+        </div>
+        
+        <div class="sleep-stage">
+            <h3>快速动眼睡眠(REM)</h3>
+            <div class="progress-container">
+                <div class="progress-bar rem-sleep" style="width: 31.0%">121分钟 (31.0%)</div>
+            </div>
+            <p>REM睡眠充足，处于理想范围(20-25%)的上限，这对记忆巩固和情绪调节非常有益。</p>
+        </div>
+        
+        <div class="sleep-stage">
+            <h3>清醒时间</h3>
+            <div class="progress-container">
+                <div class="progress-bar awake" style="width: 1.0%">4分钟 (1.0%)</div>
+            </div>
+            <p>夜间觉醒时间非常少，这是良好的睡眠连续性的表现。</p>
+        </div>
+        
+        <h3>睡眠周期分析</h3>
+        <p>您的睡眠呈现以下特点：</p>
+        <ul>
+            <li>前半夜深度睡眠集中(01:00-02:36)，符合正常生理模式</li>
+            <li>REM睡眠主要分布在03:10-07:16期间，持续时间逐渐延长，符合健康睡眠周期</li>
+            <li>存在多次短暂的睡眠中断(00:41, 02:36, 07:07等)，虽然每次时间很短，但可能影响睡眠质量</li>
+        </ul>
+    </div>
+
+    <div class="report-section">
+        <h2>血氧与心率变异性分析</h2>
+        <h3>血氧饱和度(SpO₂)</h3>
+        <table>
+            <tr>
+                <th>指标</th>
+                <th>数值</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>平均血氧</td>
+                <td>96.2%</td>
+                <td class="good">正常</td>
+            </tr>
+            <tr>
+                <td>最低血氧</td>
+                <td>91% (06:50)</td>
+                <td class="improvement">轻度下降</td>
+            </tr>
+            <tr>
+                <td>血氧波动</td>
+                <td>91%-100%</td>
+                <td class="good">正常范围</td>
+            </tr>
+        </table>
+        <p>您的血氧水平总体良好，但清晨出现一次轻度下降(91%)，可能与REM睡眠期间的呼吸变化有关。</p>
+        
+        <h3>心率变异性(HRV)</h3>
+        <table>
+            <tr>
+                <th>时间</th>
+                <th>HRV(ms)</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>00:03</td>
+                <td>42.03</td>
+                <td>中等</td>
+            </tr>
+            <tr>
+                <td>01:27</td>
+                <td>52.68</td>
+                <td class="good">良好</td>
+            </tr>
+            <tr>
+                <td>03:27</td>
+                <td>76.04</td>
+                <td class="good">优秀</td>
+            </tr>
+            <tr>
+                <td>05:27</td>
+                <td>54.74</td>
+                <td class="good">良好</td>
+            </tr>
+            <tr>
+                <td>07:29</td>
+                <td>53.11</td>
+                <td class="good">良好</td>
+            </tr>
+            <tr>
+                <td>09:27</td>
+                <td>34.19</td>
+                <td>中等</td>
+            </tr>
+        </table>
+        <p>您的心率变异性整体表现良好，尤其在深夜达到最佳状态(76.04ms)，表明副交感神经活动充分，身体恢复良好。</p>
+    </div>
+
+    <div class="report-section">
+        <h2>潜在风险提示</h2>
+        <ul>
+            <li><strong>深度睡眠不足</strong>：可能影响身体修复和生长激素分泌</li>
+            <li><strong>清晨血氧轻度下降</strong>：可能与REM睡眠期间肌肉松弛有关，建议观察是否经常发生</li>
+            <li><strong>多次短暂觉醒</strong>：虽然每次时间很短，但累积可能影响睡眠质量</li>
+        </ul>
+    </div>
+
+    <div class="report-section">
+        <h2>科学改善建议</h2>
+        
+        <div class="recommendation">
+            <h3>增加深度睡眠</h3>
+            <ul>
+                <li>睡前2小时避免剧烈运动和蓝光暴露</li>
+                <li>保持卧室温度在18-20°C，凉爽环境有助于深度睡眠</li>
+                <li>考虑补充镁元素(如甘氨酸镁)可能有助于改善深度睡眠</li>
+            </ul>
+        </div>
+        
+        <div class="recommendation">
+            <h3>优化睡眠连续性</h3>
+            <ul>
+                <li>睡前避免摄入咖啡因和酒精</li>
+                <li>建立规律的睡眠-觉醒节律，包括周末</li>
+                <li>如果夜间醒来，不要看时间，避免产生焦虑</li>
+            </ul>
+        </div>
+        
+        <div class="recommendation">
+            <h3>监测与随访建议</h3>
+            <ul>
+                <li>继续监测睡眠，特别关注清晨血氧变化</li>
+                <li>如果清晨血氧低于90%的情况频繁出现，建议咨询睡眠专科医生</li>
+                <li>1个月后复查睡眠结构，评估改善效果</li>
+            </ul>
+        </div>
+        
+        <h3>预期改善目标</h3>
+        <table>
+            <tr>
+                <th>指标</th>
+                <th>当前值</th>
+                <th>目标值</th>
+            </tr>
+            <tr>
+                <td>深度睡眠比例</td>
+                <td>16.2%</td>
+                <td>20-25%</td>
+            </tr>
+            <tr>
+                <td>夜间觉醒次数</td>
+                <td>4次</td>
+                <td>≤2次</td>
+            </tr>
+            <tr>
+                <td>最低血氧</td>
+                <td>91%</td>
+                <td>≥92%</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
