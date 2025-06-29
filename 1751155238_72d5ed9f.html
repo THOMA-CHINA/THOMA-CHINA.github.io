@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .chart {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .improvement {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .warning {
+            background-color: #fdecea;
+            padding: 15px;
+            border-left: 4px solid #e74c3c;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="score">总体睡眠评分: 72/100 (中等)</div>
+    
+    <div class="section">
+        <h2>睡眠结构分析</h2>
+        <div class="chart">
+            <table>
+                <tr>
+                    <th>睡眠阶段</th>
+                    <th>时长(分钟)</th>
+                    <th>占比</th>
+                    <th>理想范围</th>
+                </tr>
+                <tr>
+                    <td>清醒时间</td>
+                    <td>4</td>
+                    <td>1.0%</td>
+                    <td>&lt;5%</td>
+                </tr>
+                <tr>
+                    <td>核心睡眠</td>
+                    <td>202</td>
+                    <td>51.5%</td>
+                    <td>45-55%</td>
+                </tr>
+                <tr>
+                    <td>深度睡眠</td>
+                    <td>63</td>
+                    <td>16.1%</td>
+                    <td>15-25%</td>
+                </tr>
+                <tr>
+                    <td>快速动眼睡眠</td>
+                    <td>121</td>
+                    <td>30.9%</td>
+                    <td>20-25%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <p><strong>睡眠结构解读：</strong></p>
+        <ul>
+            <li>核心睡眠占比在正常范围内，表明基础睡眠质量尚可</li>
+            <li>深度睡眠占比略低于理想范围，可能影响身体恢复效果</li>
+            <li>快速动眼睡眠占比明显偏高(30.9%)，可能导致白天疲劳感</li>
+            <li>睡眠周期分布不均匀，存在多次短时觉醒</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>血氧数据分析</h2>
+        <p><strong>血氧饱和度范围：</strong> 91%-100%</p>
+        <p><strong>平均血氧水平：</strong> 96.4%</p>
+        
+        <div class="warning">
+            <p><strong>潜在问题：</strong></p>
+            <ul>
+                <li>检测到3次血氧饱和度低于94%(92%, 91%, 93%)</li>
+                <li>最低血氧91%出现在06:50，可能与清晨呼吸模式改变有关</li>
+                <li>血氧波动较大(9个百分点)，需关注呼吸质量</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>睡眠质量改善建议</h2>
+        
+        <div class="improvement">
+            <h3>1. 优化睡眠环境</h3>
+            <ul>
+                <li>保持卧室温度在18-22°C之间</li>
+                <li>使用遮光窗帘减少光线干扰</li>
+                <li>考虑使用白噪音机减少夜间觉醒</li>
+            </ul>
+        </div>
+        
+        <div class="improvement">
+            <h3>2. 调整睡前习惯</h3>
+            <ul>
+                <li>睡前1小时避免使用电子设备</li>
+                <li>建立规律的睡前放松仪式(如冥想、温水浴)</li>
+                <li>避免睡前3小时摄入咖啡因和酒精</li>
+            </ul>
+        </div>
+        
+        <div class="improvement">
+            <h3>3. 改善呼吸质量</h3>
+            <ul>
+                <li>尝试侧卧睡姿，可能改善血氧水平</li>
+                <li>进行鼻腔呼吸练习</li>
+                <li>考虑使用加湿器保持呼吸道湿润</li>
+                <li>如持续出现低血氧，建议咨询医生评估睡眠呼吸状况</li>
+            </ul>
+        </div>
+        
+        <div class="improvement">
+            <h3>4. 调节昼夜节律</h3>
+            <ul>
+                <li>早晨接受充足自然光照</li>
+                <li>保持规律的起床时间(即使在周末)</li>
+                <li>避免白天过长的午睡(不超过30分钟)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>后续监测建议</h2>
+        <ul>
+            <li>连续监测1周睡眠数据，观察变化趋势</li>
+            <li>特别关注清晨时段的血氧水平</li>
+            <li>记录日间疲劳程度与睡眠数据的关联</li>
+            <li>如改善措施效果不明显，建议进行专业睡眠监测</li>
+        </ul>
+    </div>
+</body>
+</html>
