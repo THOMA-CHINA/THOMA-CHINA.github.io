@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .warning {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .good {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+        .improvement {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>总体睡眠评分: <span class="score">72/100</span></h2>
+        <p>您的睡眠质量中等，有改善空间。主要优势是良好的血氧水平，但深度睡眠比例不足且夜间觉醒次数较多。</p>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠结构分析</h2>
+        <table>
+            <tr>
+                <th>睡眠阶段</th>
+                <th>时长(分钟)</th>
+                <th>占比</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>核心睡眠</td>
+                <td>252</td>
+                <td>65.1%</td>
+                <td class="good">正常</td>
+            </tr>
+            <tr>
+                <td>深度睡眠</td>
+                <td>28</td>
+                <td>7.2%</td>
+                <td class="warning">不足(理想应为15-25%)</td>
+            </tr>
+            <tr>
+                <td>快速动眼睡眠</td>
+                <td>100</td>
+                <td>25.8%</td>
+                <td class="good">良好</td>
+            </tr>
+            <tr>
+                <td>清醒时间</td>
+                <td>7</td>
+                <td>1.8%</td>
+                <td>正常</td>
+            </tr>
+        </table>
+        
+        <h3>睡眠结构问题:</h3>
+        <ul>
+            <li>深度睡眠时间仅为28分钟(7.2%)，显著低于健康标准(15-25%)</li>
+            <li>睡眠连续性较差，共出现8次夜间觉醒</li>
+            <li>快速动眼睡眠分布不均匀，集中在01:19-02:10和05:43-06:13时段</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>血氧数据分析</h2>
+        <p>平均血氧水平: <span class="good">96.3%</span> (正常范围: 95-100%)</p>
+        <p>最低血氧水平: <span class="warning">90%</span> (发生在05:48和01:46)</p>
+        
+        <h3>血氧问题:</h3>
+        <ul>
+            <li>检测到2次血氧下降至90%的情况，可能与呼吸暂停或体位变化有关</li>
+            <li>血氧波动较大(90-100%)，建议关注夜间呼吸状况</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>心率变异性(HRV)分析</h2>
+        <p>夜间平均HRV: <span class="good">39.5ms</span> (正常范围: 30-50ms)</p>
+        <p>日间HRV波动: 17.38-55.454ms</p>
+        
+        <h3>HRV评估:</h3>
+        <ul>
+            <li>夜间HRV处于健康范围，表明自主神经系统功能良好</li>
+            <li>日间HRV波动较大，可能与压力或活动水平变化有关</li>
+        </ul>
+    </div>
+    
+    <div class="improvement">
+        <h2>睡眠改善建议</h2>
+        <h3>增加深度睡眠:</h3>
+        <ul>
+            <li>睡前1小时避免蓝光暴露(手机、电脑等)</li>
+            <li>保持卧室温度在18-20°C之间</li>
+            <li>考虑补充镁元素(如甘氨酸镁)可能有助于延长深度睡眠</li>
+        </ul>
+        
+        <h3>减少夜间觉醒:</h3>
+        <ul>
+            <li>睡前3小时避免大量饮水</li>
+            <li>减少咖啡因摄入，特别是下午3点后</li>
+            <li>建立规律的睡眠-觉醒时间表</li>
+        </ul>
+        
+        <h3>血氧改善建议:</h3>
+        <ul>
+            <li>尝试侧卧睡眠姿势，可能改善呼吸</li>
+            <li>如有打鼾症状，建议进行睡眠呼吸暂停筛查</li>
+            <li>保持卧室良好通风</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>潜在风险提示</h2>
+        <ul>
+            <li>深度睡眠不足可能影响身体修复和记忆巩固</li>
+            <li>血氧偶尔下降至90%需要关注，建议持续监测</li>
+            <li>多次夜间觉醒可能导致日间疲劳</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>专业建议</h2>
+        <p>建议进行为期2周的睡眠改善计划后重新评估。如血氧下降情况持续出现，建议咨询睡眠专科医生进行进一步检查。</p>
+        <p>可考虑使用睡眠日记记录每日睡眠习惯和日间状态，帮助识别影响睡眠质量的具体因素。</p>
+    </div>
+</body>
+</html>
