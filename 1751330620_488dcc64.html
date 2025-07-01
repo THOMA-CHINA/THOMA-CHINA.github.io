@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .warning {
+            border-left-color: #e74c3c;
+            background: #fef0ef;
+        }
+        .good {
+            border-left-color: #2ecc71;
+            background: #eafaf1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #3498db;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
+        .deep-sleep {
+            background-color: #9b59b6;
+        }
+        .rem {
+            background-color: #e67e22;
+        }
+        .awake {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    <p>报告日期: 2025年7月1日</p>
+
+    <div class="card">
+        <h2>总体睡眠评分: 78/100</h2>
+        <p>您的睡眠质量中等偏上，但仍有改善空间。主要优势是深度睡眠比例良好，但快速眼动睡眠(REM)分布不均匀且存在多次短暂觉醒。</p>
+    </div>
+
+    <h2>睡眠结构分析</h2>
+    <table>
+        <tr>
+            <th>睡眠阶段</th>
+            <th>时长(分钟)</th>
+            <th>占比</th>
+            <th>理想范围</th>
+            <th>评估</th>
+        </tr>
+        <tr>
+            <td>核心睡眠</td>
+            <td>178</td>
+            <td>50.7%</td>
+            <td>45-55%</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>深度睡眠</td>
+            <td>67</td>
+            <td>19.1%</td>
+            <td>15-25%</td>
+            <td>良好</td>
+        </tr>
+        <tr>
+            <td>快速眼动睡眠</td>
+            <td>106</td>
+            <td>30.2%</td>
+            <td>20-25%</td>
+            <td>偏高</td>
+        </tr>
+        <tr>
+            <td>清醒时间</td>
+            <td>2</td>
+            <td>0.6%</td>
+            <td>&lt;5%</td>
+            <td>优秀</td>
+        </tr>
+    </table>
+
+    <div class="progress-container">
+        <div class="progress-bar" style="width: 50.7%">核心睡眠 50.7%</div>
+        <div class="progress-bar deep-sleep" style="width: 19.1%">深度睡眠 19.1%</div>
+        <div class="progress-bar rem" style="width: 30.2%">REM 30.2%</div>
+    </div>
+
+    <div class="card">
+        <h2>睡眠周期分析</h2>
+        <p>您的睡眠呈现以下特点:</p>
+        <ul>
+            <li>深度睡眠主要集中在前半夜(01:35-02:12和03:58-04:28)，符合正常生理规律</li>
+            <li>REM睡眠比例偏高(30.2%)，且分布不均匀，后半夜REM片段化(04:30-04:31和06:53-06:54)</li>
+            <li>存在多次短暂觉醒(03:39-03:41, 04:31-04:32等)，虽然总清醒时间很少，但可能影响睡眠连续性</li>
+        </ul>
+    </div>
+
+    <h2>血氧数据分析</h2>
+    <table>
+        <tr>
+            <th>时间</th>
+            <th>血氧饱和度</th>
+            <th>评估</th>
+        </tr>
+        <tr>
+            <td>2025年7月1日 03:43</td>
+            <td>89%</td>
+            <td class="warning">偏低</td>
+        </tr>
+        <tr>
+            <td>2025年7月1日 06:23</td>
+            <td>83%</td>
+            <td class="warning">显著偏低</td>
+        </tr>
+        <tr>
+            <td>其他时间</td>
+            <td>90-100%</td>
+            <td>正常</td>
+        </tr>
+    </table>
+
+    <div class="card warning">
+        <h2>潜在风险</h2>
+        <p>检测到两次明显的血氧下降事件:</p>
+        <ol>
+            <li>03:43降至89% - 可能与深度睡眠期间的呼吸减弱有关</li>
+            <li>06:23降至83% - 发生在REM睡眠期间，可能与REM相关的肌肉松弛导致的上呼吸道阻塞有关</li>
+        </ol>
+        <p>建议: 如果这种血氧下降频繁发生(每周≥3次)，建议咨询睡眠专科医生评估是否存在睡眠呼吸暂停。</p>
+    </div>
+
+    <h2>心率变异性(HRV)分析</h2>
+    <table>
+        <tr>
+            <th>时间</th>
+            <th>HRV值(ms)</th>
+            <th>睡眠阶段</th>
+            <th>评估</th>
+        </tr>
+        <tr>
+            <td>01:20-01:27</td>
+            <td>30.752-32.278</td>
+            <td>核心睡眠</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>03:27</td>
+            <td>58.634</td>
+            <td>深度睡眠</td>
+            <td>良好</td>
+        </tr>
+        <tr>
+            <td>05:27</td>
+            <td>43.101</td>
+            <td>REM睡眠</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>07:27</td>
+            <td>112.638</td>
+            <td>觉醒前</td>
+            <td>优秀</td>
+        </tr>
+    </table>
+
+    <div class="card good">
+        <h2>HRV评估</h2>
+        <p>您的心率变异性表现良好，特别是在深度睡眠期间HRV升高(58.634ms)，表明副交感神经活动增强，这是深度睡眠质量良好的标志。觉醒前HRV显著升高(112.638ms)也表明自主神经系统调节功能良好。</p>
+    </div>
+
+    <h2>睡眠改善建议</h2>
+    <div class="card">
+        <h3>1. 优化睡眠环境</h3>
+        <ul>
+            <li>保持卧室温度在18-22°C，湿度40-60%</li>
+            <li>使用白噪音机减少环境噪音干扰</li>
+            <li>确保完全黑暗的环境(考虑使用遮光窗帘)</li>
+        </ul>
+
+        <h3>2. 改善睡眠呼吸</h3>
+        <ul>
+            <li>尝试侧卧睡姿，减少仰卧时间</li>
+            <li>睡前避免酒精和镇静类药物</li>
+            <li>如有打鼾史，考虑使用防打鼾枕头或口腔矫治器</li>
+        </ul>
+
+        <h3>3. 调节睡眠节律</h3>
+        <ul>
+            <li>固定就寝和起床时间，即使在周末也保持一致</li>
+            <li>早晨接受15-30分钟自然光照</li>
+            <li>睡前1小时避免蓝光暴露(手机、电脑等)</li>
+        </ul>
+
+        <h3>4. 针对性训练</h3>
+        <ul>
+            <li>下午进行适度有氧运动(如快走30分钟)</li>
+            <li>练习深呼吸和放松技巧(如4-7-8呼吸法)</li>
+            <li>考虑进行口咽部肌肉训练(如吹奏乐器练习)</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>监测建议</h2>
+        <p>建议继续监测睡眠1-2周，特别关注:</p>
+        <ol>
+            <li>血氧下降是否规律性发生在特定时间段</li>
+            <li>REM睡眠的分布是否趋于均匀</li>
+            <li>短暂觉醒次数是否减少</li>
+        </ol>
+        <p>如果血氧饱和度低于90%的情况每周出现3次以上，建议进行专业睡眠监测。</p>
+    </div>
+</body>
+</html>
