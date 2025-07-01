@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .section {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .chart-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .improvement-list {
+            padding-left: 20px;
+        }
+        .alert {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .good {
+            color: #28a745;
+        }
+        .warning {
+            color: #ffc107;
+        }
+        .danger {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <div class="score">总体睡眠评分: <span class="good">78/100</span></div>
+        <p>2025年7月1日</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">睡眠结构分析</h2>
+        <div class="chart-container">
+            <!-- 这里可以放置睡眠结构图表 -->
+            <p>睡眠总时长: 353分钟 (约5小时53分钟)</p>
+            <p>清醒时间: 2分钟 (0.6%)</p>
+            <p>核心睡眠: 178分钟 (50.4%)</p>
+            <p>深度睡眠: 67分钟 (19.0%)</p>
+            <p>快速动眼睡眠: 106分钟 (30.0%)</p>
+        </div>
+        
+        <h3>评估:</h3>
+        <ul>
+            <li><span class="good">✓</span> 深度睡眠占比(19%)接近理想范围(20-25%)</li>
+            <li><span class="good">✓</span> REM睡眠占比(30%)处于健康范围(20-25%)</li>
+            <li><span class="warning">⚠</span> 总睡眠时间略短于推荐的7-9小时</li>
+            <li><span class="good">✓</span> 清醒时间极少(仅2分钟)，表明睡眠连续性良好</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">血氧水平分析</h2>
+        <p>平均血氧饱和度: 94.5%</p>
+        <p>最低血氧记录: 83% (2025年7月1日 06:23)</p>
+        
+        <div class="alert">
+            <strong>注意:</strong> 检测到一次显著的血氧下降(83%)，可能与短暂的呼吸暂停或体位变化有关。建议持续监测，如频繁出现需就医检查。
+        </div>
+        
+        <h3>评估:</h3>
+        <ul>
+            <li><span class="warning">⚠</span> 血氧波动较大(83%-100%)，需关注</li>
+            <li><span class="good">✓</span> 大部分时间血氧水平正常(>90%)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">心率变异性(HRV)分析</h2>
+        <p>HRV范围: 30.752 ms - 112.638 ms</p>
+        <p>平均HRV: 55.28 ms</p>
+        
+        <h3>评估:</h3>
+        <ul>
+            <li><span class="good">✓</span> 晨间HRV(112.638 ms)较高，表明良好的恢复状态</li>
+            <li><span class="warning">⚠</span> 夜间HRV波动较大，可能与睡眠阶段转换有关</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">睡眠改善建议</h2>
+        <h3>睡眠结构优化:</h3>
+        <ol class="improvement-list">
+            <li><strong>延长睡眠时间:</strong> 增加30-60分钟睡眠，特别是深度睡眠阶段</li>
+            <li><strong>保持规律作息:</strong> 固定就寝和起床时间，帮助稳定睡眠结构</li>
+            <li><strong>睡前准备:</strong> 睡前一小时避免蓝光暴露，创造黑暗安静的睡眠环境</li>
+        </ol>
+        
+        <h3>血氧改善建议:</h3>
+        <ol class="improvement-list">
+            <li><strong>侧卧睡眠:</strong> 尝试侧卧姿势，可能改善呼吸和血氧水平</li>
+            <li><strong>避免睡前饮酒:</strong> 酒精会加重呼吸问题</li>
+            <li><strong>体重管理:</strong> 如超重，减重有助于改善夜间呼吸</li>
+        </ol>
+        
+        <h3>HRV提升建议:</h3>
+        <ol class="improvement-list">
+            <li><strong>日间运动:</strong> 适度有氧运动可提高HRV</li>
+            <li><strong>压力管理:</strong> 冥想或深呼吸练习有助于提高HRV</li>
+            <li><strong>避免咖啡因:</strong> 下午晚些时候避免摄入咖啡因</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">潜在风险提示</h2>
+        <div class="alert">
+            <strong>需关注:</strong> 检测到一次显著的血氧下降(83%)。如频繁出现类似情况，可能存在睡眠呼吸暂停风险，建议咨询睡眠专科医生进行进一步评估。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">总结</h2>
+        <p>您的睡眠质量总体良好，主要优势在于良好的睡眠连续性和合理的睡眠阶段分布。主要改善空间在于延长总睡眠时间和关注偶尔的血氧下降情况。建议持续监测1-2周，如血氧下降频繁出现或伴随日间嗜睡症状，应及时就医。</p>
+    </div>
+</body>
+</html>
