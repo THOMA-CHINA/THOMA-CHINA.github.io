@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .alert {
+            background: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 10px 0;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>总体睡眠评分</h2>
+        <p>基于现有数据，您的睡眠质量评分为：<span class="score">75/100</span></p>
+        <p>评分说明：您的睡眠存在一些值得关注的波动，特别是血氧水平的变化，但整体睡眠结构尚可。</p>
+    </div>
+    
+    <div class="card">
+        <h2>血氧数据分析</h2>
+        <table>
+            <tr>
+                <th>时间</th>
+                <th>血氧饱和度</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>03:13</td>
+                <td>91%</td>
+                <td>偏低</td>
+            </tr>
+            <tr>
+                <td>03:43</td>
+                <td>89%</td>
+                <td>异常低</td>
+            </tr>
+            <tr>
+                <td>04:25</td>
+                <td>92%</td>
+                <td>偏低</td>
+            </tr>
+            <tr>
+                <td>05:58</td>
+                <td>90%</td>
+                <td>偏低</td>
+            </tr>
+            <tr>
+                <td>06:23</td>
+                <td>83%</td>
+                <td>严重异常</td>
+            </tr>
+        </table>
+        
+        <div class="alert">
+            <strong>注意：</strong>检测到多次血氧饱和度低于90%的情况，特别是在06:23出现83%的极低值，这可能表明存在睡眠呼吸暂停或低通气事件。
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>心率变异性分析</h2>
+        <table>
+            <tr>
+                <th>时间</th>
+                <th>HRV值(ms)</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>01:27</td>
+                <td>31.223</td>
+                <td>偏低</td>
+            </tr>
+            <tr>
+                <td>03:27</td>
+                <td>46.085</td>
+                <td>正常</td>
+            </tr>
+            <tr>
+                <td>05:27</td>
+                <td>35.075</td>
+                <td>偏低</td>
+            </tr>
+            <tr>
+                <td>07:27</td>
+                <td>65.748</td>
+                <td>良好</td>
+            </tr>
+        </table>
+        <p>HRV分析显示您的自主神经系统在夜间有波动，可能与血氧下降事件相关。</p>
+    </div>
+    
+    <div class="card">
+        <h2>潜在风险</h2>
+        <ul>
+            <li>睡眠呼吸暂停综合征风险</li>
+            <li>夜间低氧血症风险</li>
+            <li>自主神经功能紊乱风险</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>科学建议</h2>
+        <h3>医疗建议：</h3>
+        <ol>
+            <li>建议尽快进行专业的睡眠监测(多导睡眠图检查)以排除睡眠呼吸暂停综合征</li>
+            <li>咨询呼吸科或睡眠专科医生</li>
+            <li>考虑进行心肺功能评估</li>
+        </ol>
+        
+        <h3>生活方式调整：</h3>
+        <ol>
+            <li>保持侧卧位睡眠，避免仰卧</li>
+            <li>睡前避免饮酒和使用镇静药物</li>
+            <li>控制体重，如有超重建议减重</li>
+            <li>避免睡前3小时进食</li>
+            <li>保持卧室空气流通</li>
+        </ol>
+        
+        <h3>监测建议：</h3>
+        <ol>
+            <li>继续监测血氧变化，记录异常时间点</li>
+            <li>观察白天是否有嗜睡、头痛等症状</li>
+            <li>记录打鼾情况(如有)</li>
+        </ol>
+    </div>
+    
+    <div class="card">
+        <h2>随访建议</h2>
+        <p>建议1个月后复查睡眠监测数据，如血氧下降事件持续存在或加重，应及时就医。</p>
+    </div>
+</body>
+</html>
