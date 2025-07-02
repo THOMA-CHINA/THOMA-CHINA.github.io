@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .section-title {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 15px;
+            border-left: 4px solid #ffd600;
+            margin: 20px 0;
+        }
+        .data-point {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .metric {
+            font-weight: bold;
+        }
+        .risk {
+            color: #e53935;
+            font-weight: bold;
+        }
+        .good {
+            color: #43a047;
+            font-weight: bold;
+        }
+        .warning {
+            color: #fb8c00;
+            font-weight: bold;
+        }
+        .improvement {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #81c784;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <p>2025年7月2日-7月3日</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">总体睡眠评分</h2>
+        <div class="data-point">
+            <span>综合睡眠质量评分:</span>
+            <span class="good">75/100</span>
+        </div>
+        <p>您的睡眠质量处于中等偏上水平，但仍有改善空间。以下报告将详细分析您的睡眠数据。</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">血氧数据分析</h2>
+        <div class="data-point">
+            <span>平均血氧水平:</span>
+            <span class="good">96.4%</span>
+        </div>
+        <div class="data-point">
+            <span>最低血氧水平:</span>
+            <span class="warning">90% (2025年7月2日 05:58)</span>
+        </div>
+        
+        <div class="highlight">
+            <h3>关键发现</h3>
+            <p>您的血氧水平总体良好，但在7月2日05:58和7月3日01:36分别出现了90%和94%的低血氧事件。这些短暂的血氧下降可能表明存在轻微的呼吸不畅或睡眠呼吸暂停现象。</p>
+        </div>
+        
+        <h3>血氧波动趋势</h3>
+        <p>您的血氧水平在夜间保持相对稳定，但需要注意凌晨时分的波动。特别是05:00-06:00时段出现的血氧下降值得关注。</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">心率变异性(HRV)分析</h2>
+        <div class="data-point">
+            <span>平均HRV:</span>
+            <span>40.48 ms</span>
+        </div>
+        <div class="data-point">
+            <span>HRV趋势:</span>
+            <span class="good">逐渐升高</span>
+        </div>
+        
+        <p>您的心率变异性数据显示了良好的恢复模式，HRV从37.42 ms上升到42.959 ms，表明您的自主神经系统在夜间得到了适当的恢复。</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">潜在风险提示</h2>
+        <div class="highlight">
+            <h3>需要注意的风险因素</h3>
+            <ul>
+                <li>凌晨时分的血氧下降事件(最低至90%)</li>
+                <li>血氧波动可能与睡眠姿势或呼吸道轻微阻塞有关</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">睡眠改善建议</h2>
+        <div class="improvement">
+            <h3>针对血氧波动的建议</h3>
+            <ol>
+                <li><strong>调整睡眠姿势</strong>: 尝试侧卧睡眠，这有助于减少呼吸道阻塞</li>
+                <li><strong>避免睡前饮酒</strong>: 酒精会放松喉部肌肉，可能加重呼吸问题</li>
+                <li><strong>保持卧室空气流通</strong>: 确保睡眠环境通风良好</li>
+                <li><strong>考虑使用加湿器</strong>: 干燥的空气可能刺激呼吸道</li>
+            </ol>
+        </div>
+        
+        <div class="improvement">
+            <h3>整体睡眠质量提升建议</h3>
+            <ol>
+                <li><strong>保持规律作息</strong>: 尽量每天同一时间上床和起床</li>
+                <li><strong>睡前放松活动</strong>: 尝试冥想或轻度拉伸来帮助入睡</li>
+                <li><strong>控制咖啡因摄入</strong>: 下午3点后避免咖啡因饮料</li>
+                <li><strong>监测设备使用</strong>: 继续使用睡眠监测设备，关注血氧变化</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">后续行动计划</h2>
+        <p>建议您:</p>
+        <ul>
+            <li>实施上述改善建议1-2周后重新评估睡眠数据</li>
+            <li>如果血氧下降事件持续发生，建议咨询睡眠专科医生</li>
+            <li>记录睡眠日志，记录睡眠质量主观感受</li>
+        </ul>
+    </div>
+</body>
+</html>
