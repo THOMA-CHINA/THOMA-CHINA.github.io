@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #3498db;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+        .sleep-stage {
+            margin-bottom: 15px;
+        }
+        .recommendation {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>总体睡眠评分</h2>
+        <div class="score">76/100</div>
+        <p>您的睡眠质量处于中等水平，有改善空间。主要优势是充足的快速动眼睡眠，但深度睡眠比例偏低且夜间清醒时间较长。</p>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠结构分析</h2>
+        
+        <div class="sleep-stage">
+            <h3>总睡眠时间: 7小时55分钟 (495分钟)</h3>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 100%">100%</div>
+            </div>
+        </div>
+        
+        <div class="sleep-stage">
+            <h3>核心睡眠: 230分钟 (46.5%)</h3>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 46.5%">46.5%</div>
+            </div>
+            <p>轻度睡眠阶段，占比在正常范围内(45-55%)。</p>
+        </div>
+        
+        <div class="sleep-stage">
+            <h3>深度睡眠: 66分钟 (13.3%)</h3>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 13.3%">13.3%</div>
+            </div>
+            <p>低于理想范围(15-25%)，表明身体修复时间不足。</p>
+        </div>
+        
+        <div class="sleep-stage">
+            <h3>快速动眼睡眠: 112分钟 (22.6%)</h3>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 22.6%">22.6%</div>
+            </div>
+            <p>处于理想范围(20-25%)，有助于记忆巩固和情绪调节。</p>
+        </div>
+        
+        <div class="sleep-stage">
+            <h3>清醒时间: 87分钟 (17.6%)</h3>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 17.6%">17.6%</div>
+            </div>
+            <p>高于理想值(<10%)，特别是早晨6:23-7:46期间有长时间清醒。</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>生理指标分析</h2>
+        
+        <h3>血氧饱和度</h3>
+        <p>平均血氧水平为96%，最低降至94%(在1:36和7:27)，属于正常范围(≥94%)。</p>
+        
+        <h3>心率变异性(HRV)</h3>
+        <p>夜间HRV平均为40.2ms，早晨升高至72ms，表明从睡眠到清醒的生理过渡正常。</p>
+    </div>
+    
+    <div class="card">
+        <h2>潜在风险</h2>
+        <ul>
+            <li><strong>深度睡眠不足</strong>：可能影响身体修复和免疫系统功能</li>
+            <li><strong>夜间清醒时间过长</strong>：可能导致日间疲劳</li>
+            <li><strong>睡眠片段化</strong>：多次短暂觉醒影响睡眠连续性</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>科学改善建议</h2>
+        
+        <div class="recommendation">
+            <h3>增加深度睡眠</h3>
+            <ul>
+                <li>睡前2小时避免蓝光暴露(手机、电脑)</li>
+                <li>保持卧室温度在18-20°C之间</li>
+                <li>考虑补充镁(200-400mg)或甘氨酸(3g)睡前服用</li>
+            </ul>
+        </div>
+        
+        <div class="recommendation">
+            <h3>减少夜间觉醒</h3>
+            <ul>
+                <li>睡前3小时避免大量饮水和酒精</li>
+                <li>使用白噪音或耳塞减少环境干扰</li>
+                <li>建立规律的睡眠-觉醒时间表</li>
+            </ul>
+        </div>
+        
+        <div class="recommendation">
+            <h3>优化睡眠结构</h3>
+            <ul>
+                <li>考虑将入睡时间提前30分钟以获得更多深度睡眠窗口</li>
+                <li>早晨阳光暴露帮助调节昼夜节律</li>
+                <li>午间小睡不超过20分钟以避免影响夜间睡眠</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠时间线详情</h2>
+        <table>
+            <tr>
+                <th>时间段</th>
+                <th>睡眠阶段</th>
+                <th>持续时间(分钟)</th>
+            </tr>
+            <tr>
+                <td>23:37-23:50</td>
+                <td>核心睡眠</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>23:50-23:55</td>
+                <td>深度睡眠</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>23:55-23:59</td>
+                <td>核心睡眠</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>23:59-00:33</td>
+                <td>深度睡眠</td>
+                <td>34</td>
+            </tr>
+            <!-- 更多数据行... -->
+            <tr>
+                <td>06:23-07:46</td>
+                <td>清醒时间</td>
+                <td>83</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
