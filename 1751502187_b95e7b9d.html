@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .warning {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .good {
+            color: #2ecc71;
+        }
+        .improvement {
+            background: #e8f4fc;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>总体睡眠评分</h2>
+        <p class="score">72/100</p>
+        <p>您的睡眠质量中等，有改善空间。主要问题在于深度睡眠不足和夜间清醒时间较长。</p>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠结构分析</h2>
+        <table>
+            <tr>
+                <th>睡眠阶段</th>
+                <th>时长(分钟)</th>
+                <th>占比</th>
+                <th>评价</th>
+            </tr>
+            <tr>
+                <td>核心睡眠</td>
+                <td>213</td>
+                <td>48.3%</td>
+                <td class="good">正常</td>
+            </tr>
+            <tr>
+                <td>快速动眼睡眠</td>
+                <td>112</td>
+                <td>25.4%</td>
+                <td class="good">良好</td>
+            </tr>
+            <tr>
+                <td>深度睡眠</td>
+                <td>28</td>
+                <td>6.4%</td>
+                <td class="warning">不足(理想应为15-25%)</td>
+            </tr>
+            <tr>
+                <td>清醒时间</td>
+                <td>87</td>
+                <td>19.9%</td>
+                <td class="warning">偏多(理想应<10%)</td>
+            </tr>
+        </table>
+        
+        <h3>睡眠阶段分布特点</h3>
+        <ul>
+            <li>深度睡眠仅占总睡眠时间的6.4%，远低于理想范围(15-25%)</li>
+            <li>夜间清醒时间较长(87分钟)，特别是在06:23-07:46期间有长时间清醒</li>
+            <li>快速动眼睡眠分布良好，占总睡眠时间的25.4%</li>
+            <li>睡眠周期呈现碎片化特征，多次短暂觉醒</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>血氧水平分析</h2>
+        <p>平均血氧饱和度: <span class="good">96.3%</span></p>
+        <p>最低血氧饱和度: <span class="warning">90%</span> (2025年7月2日 05:58)</p>
+        <p>血氧波动情况: 整体良好，但有两次明显下降(04:25降至92%，05:58降至90%)</p>
+        
+        <h3>潜在风险</h3>
+        <ul>
+            <li>凌晨05:58出现血氧降至90%，可能与呼吸暂停事件相关</li>
+            <li>04:25血氧降至92%，与快速动眼睡眠阶段重合，需关注呼吸状况</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>心率变异性分析</h2>
+        <p>平均HRV: <span class="good">48.63ms</span></p>
+        <p>HRV趋势: 从睡眠初期的37.42ms上升到早晨的72.05ms，显示压力水平逐渐降低</p>
+        <p>评价: 心率变异性显示您的自主神经系统调节能力良好</p>
+    </div>
+    
+    <div class="card">
+        <h2>综合评估与建议</h2>
+        
+        <h3>主要问题</h3>
+        <ol>
+            <li>深度睡眠严重不足</li>
+            <li>夜间清醒时间过长</li>
+            <li>可能存在轻度呼吸问题(基于血氧下降事件)</li>
+        </ol>
+        
+        <div class="improvement">
+            <h3>改善建议</h3>
+            <p><strong>1. 增加深度睡眠:</strong></p>
+            <ul>
+                <li>睡前2小时避免使用电子设备</li>
+                <li>保持卧室温度在18-20°C之间</li>
+                <li>考虑补充镁元素(如甘氨酸镁)</li>
+            </ul>
+            
+            <p><strong>2. 减少夜间觉醒:</strong></p>
+            <ul>
+                <li>避免睡前4小时摄入咖啡因</li>
+                <li>建立规律的睡眠-觉醒时间表</li>
+                <li>睡前进行15分钟冥想或深呼吸练习</li>
+            </ul>
+            
+            <p><strong>3. 呼吸健康:</strong></p>
+            <ul>
+                <li>尝试侧卧睡姿，减少呼吸暂停风险</li>
+                <li>如有打鼾症状，建议进行睡眠呼吸监测</li>
+                <li>避免睡前饮酒</li>
+            </ul>
+            
+            <p><strong>4. 其他建议:</strong></p>
+            <ul>
+                <li>早晨醒来后立即接触自然光，帮助调节生物钟</li>
+                <li>保持规律的运动习惯，但避免睡前3小时剧烈运动</li>
+                <li>考虑使用白噪音机减少环境干扰</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>后续监测建议</h2>
+        <ul>
+            <li>持续监测1周，观察改善情况</li>
+            <li>特别关注血氧下降事件是否重复出现</li>
+            <li>记录每日睡眠习惯与质量的主观感受</li>
+            <li>如血氧下降事件频繁发生(每周>3次)，建议咨询睡眠专科医生</li>
+        </ul>
+    </div>
+</body>
+</html>
