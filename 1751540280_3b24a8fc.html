@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 25px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .section-title {
+            color: #4a90e2;
+            margin-top: 0;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+        .chart-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .improvement-list {
+            padding-left: 20px;
+        }
+        .improvement-list li {
+            margin-bottom: 8px;
+        }
+        .warning {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .good {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <p>基于2025年7月2日至3日的睡眠数据分析</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">1. 总体睡眠评分</h2>
+        <p>您的综合睡眠评分为: <span class="score">78/100</span></p>
+        <p>总睡眠时间: 7小时55分钟 (475分钟)</p>
+        <p>睡眠效率: 85% (总睡眠时间/床上时间)</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">2. 睡眠结构分析</h2>
+        <div class="chart-container">
+            <p><strong>各睡眠阶段占比:</strong></p>
+            <p>核心睡眠: 48.4% (230分钟) | 深度睡眠: 13.9% (66分钟) | 快速动眼睡眠: 23.6% (112分钟) | 清醒时间: 18.3% (87分钟)</p>
+        </div>
+        
+        <h3>睡眠结构评估:</h3>
+        <ul>
+            <li><span class="good">深度睡眠比例正常</span> (健康成年人通常为13-23%)</li>
+            <li><span class="good">快速动眼睡眠比例良好</span> (健康成年人通常为20-25%)</li>
+            <li><span class="warning">清醒时间比例偏高</span> (理想应低于15%)</li>
+            <li>睡眠周期呈现典型的90-120分钟循环模式</li>
+        </ul>
+        
+        <h3>潜在问题:</h3>
+        <ul>
+            <li>凌晨3:01和6:20出现两次较长的清醒时段</li>
+            <li>早晨6:23-7:46有长达83分钟的清醒时间，影响睡眠连续性</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">3. 血氧与心率变异性分析</h2>
+        <h3>血氧饱和度:</h3>
+        <ul>
+            <li>平均血氧水平: <span class="good">96%</span> (正常范围: 95-100%)</li>
+            <li>最低记录值: 94% (1:36 AM)，属于正常波动范围</li>
+            <li>未检测到明显的血氧下降事件，排除睡眠呼吸暂停风险</li>
+        </ul>
+        
+        <h3>心率变异性(HRV):</h3>
+        <ul>
+            <li>睡眠期间HRV平均: <span class="good">40.26ms</span> (良好)</li>
+            <li>早晨7:27记录到最高HRV值72.047ms，显示身体开始进入清醒状态</li>
+            <li>HRV波动模式显示自主神经系统调节功能正常</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">4. 睡眠优化建议</h2>
+        <h3>改善睡眠连续性:</h3>
+        <ol class="improvement-list">
+            <li><strong>固定作息时间:</strong> 建议每天同一时间上床和起床，包括周末</li>
+            <li><strong>减少夜间清醒时间:</strong> 如果清醒超过20分钟，建议起床进行放松活动(如阅读)，避免在床上辗转</li>
+            <li><strong>控制咖啡因摄入:</strong> 下午3点后避免咖啡、茶等含咖啡因饮品</li>
+        </ol>
+        
+        <h3>提升睡眠质量:</h3>
+        <ol class="improvement-list">
+            <li><strong>睡前放松:</strong> 睡前1小时进行冥想、深呼吸或温和拉伸</li>
+            <li><strong>优化睡眠环境:</strong> 保持卧室温度18-22°C，使用遮光窗帘，考虑白噪音</li>
+            <li><strong>日间运动:</strong> 每天30分钟中等强度运动，但避免睡前3小时剧烈运动</li>
+        </ol>
+        
+        <h3>监测建议:</h3>
+        <ol class="improvement-list">
+            <li>继续监测1-2周，关注清醒时间是否减少</li>
+            <li>如早晨长时间清醒问题持续，考虑调整起床时间提前30分钟</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">5. 潜在风险提示</h2>
+        <ul>
+            <li>目前数据未显示明显的睡眠呼吸障碍风险</li>
+            <li>长时间夜间清醒可能影响日间注意力和情绪</li>
+            <li>如出现白天过度嗜睡或疲劳感加重，建议咨询睡眠专科医生</li>
+        </ul>
+    </div>
+</body>
+</html>
