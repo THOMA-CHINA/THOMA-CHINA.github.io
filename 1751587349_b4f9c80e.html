@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .progress-container {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #3498db;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
+        .improvement {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>总体睡眠评分</h2>
+        <div class="score">78/100</div>
+        <p>您的睡眠质量中等偏上，但仍有改善空间。总睡眠时间为6小时28分钟，其中深度睡眠占比19.3%，快速动眼睡眠占比26.8%。</p>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠结构分析</h2>
+        <table>
+            <tr>
+                <th>睡眠阶段</th>
+                <th>时长(分钟)</th>
+                <th>占比</th>
+                <th>理想范围</th>
+            </tr>
+            <tr>
+                <td>深度睡眠</td>
+                <td>75</td>
+                <td>19.3%</td>
+                <td>15-25%</td>
+            </tr>
+            <tr>
+                <td>快速动眼睡眠</td>
+                <td>104</td>
+                <td>26.8%</td>
+                <td>20-25%</td>
+            </tr>
+            <tr>
+                <td>核心睡眠</td>
+                <td>208</td>
+                <td>53.6%</td>
+                <td>45-55%</td>
+            </tr>
+            <tr>
+                <td>清醒时间</td>
+                <td>1</td>
+                <td>0.3%</td>
+                <td>&lt;5%</td>
+            </tr>
+        </table>
+        
+        <h3>睡眠周期分布</h3>
+        <p>您的睡眠呈现典型的周期性变化，但深度睡眠分布不够均匀，主要集中在睡眠后半段。快速动眼睡眠在凌晨3:37-4:15和5:43-6:01期间出现较长时间段，这是正常现象。</p>
+    </div>
+    
+    <div class="card">
+        <h2>生理指标分析</h2>
+        <h3>血氧饱和度</h3>
+        <p>您的血氧水平维持在95-98%之间，属于正常范围。未观察到明显的血氧下降事件，排除了睡眠呼吸暂停的可能性。</p>
+        
+        <h3>心率变异性(HRV)</h3>
+        <p>HRV数据显示您在睡眠期间自主神经系统调节良好：</p>
+        <ul>
+            <li>入睡前HRV升高(40.406ms)，表明放松状态良好</li>
+            <li>深度睡眠期间HRV最高达67.662ms，显示良好的恢复能力</li>
+            <li>早晨醒来HRV下降至23.837ms，符合正常昼夜节律</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>潜在风险</h2>
+        <ul>
+            <li>总睡眠时间略低于推荐的7-9小时</li>
+            <li>深度睡眠占比接近下限，可能影响身体恢复</li>
+            <li>早晨血氧轻微下降至95%，可能与睡姿有关</li>
+        </ul>
+    </div>
+    
+    <div class="improvement">
+        <h2>睡眠优化建议</h2>
+        <h3>1. 延长睡眠时间</h3>
+        <p>建议提前30分钟上床，争取达到7小时总睡眠时间。这将有助于增加深度睡眠时长。</p>
+        
+        <h3>2. 改善深度睡眠质量</h3>
+        <ul>
+            <li>睡前2小时避免剧烈运动和蓝光暴露</li>
+            <li>保持卧室温度在18-22°C之间</li>
+            <li>考虑补充镁元素(如甘氨酸镁)帮助放松</li>
+        </ul>
+        
+        <h3>3. 优化睡眠环境</h3>
+        <ul>
+            <li>使用遮光窗帘保持完全黑暗</li>
+            <li>考虑使用白噪音机减少环境干扰</li>
+            <li>尝试侧卧睡姿，可能改善早晨血氧水平</li>
+        </ul>
+        
+        <h3>4. 作息规律性</h3>
+        <p>尽量保持每天相同的入睡和起床时间，包括周末。这将有助于稳定您的昼夜节律。</p>
+    </div>
+    
+    <div class="card">
+        <h2>监测建议</h2>
+        <p>建议继续监测1-2周，特别关注：</p>
+        <ol>
+            <li>深度睡眠时长的变化趋势</li>
+            <li>早晨血氧水平是否持续偏低</li>
+            <li>实施改善措施后的睡眠效率变化</li>
+        </ol>
+        <p>如果早晨血氧持续低于95%，建议咨询医生进行进一步评估。</p>
+    </div>
+</body>
+</html>
