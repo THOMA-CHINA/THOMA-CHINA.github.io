@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .section-title {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .alert {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .improvement {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <p>报告日期: 2025-07-05</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">总体评估</h2>
+        <p class="score">⚠️ 数据不足，无法进行完整评估</p>
+        <p>由于提供的睡眠阶段时长数据为空，且睡眠数据数组为空，无法进行全面的睡眠质量评估。</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">现有数据解读</h2>
+        <h3>血氧数据</h3>
+        <p>单次血氧测量值为97%，属于正常范围(95%-100%)。</p>
+        
+        <h3>心率变异性(HRV)</h3>
+        <p>两次测量值分别为26.437ms和14.317ms，显示自主神经系统活动存在波动。</p>
+    </div>
+
+    <div class="alert">
+        <h3>⚠️ 数据完整性警告</h3>
+        <p>缺少关键的睡眠阶段数据(深睡、浅睡、REM等)和连续睡眠监测数据，这严重限制了评估的准确性。</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">科学建议</h2>
+        <div class="improvement">
+            <h3>数据收集建议</h3>
+            <ul>
+                <li>使用可靠的睡眠监测设备记录完整的睡眠周期数据</li>
+                <li>确保记录至少连续7晚的睡眠数据以获得可靠评估</li>
+                <li>记录入睡和醒来的准确时间</li>
+            </ul>
+        </div>
+        
+        <h3>一般性睡眠改善建议</h3>
+        <ul>
+            <li>保持规律的睡眠时间表，即使在周末也尽量保持一致</li>
+            <li>睡前1小时避免使用电子设备</li>
+            <li>保持卧室环境黑暗、安静且温度适宜(约18-22°C)</li>
+            <li>考虑进行睡前放松活动，如冥想或轻度伸展</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">专家锐评</h2>
+        <p><em>"当前提供的数据过于有限，无法进行有意义的睡眠质量评估。仅有的血氧和HRV数据点显示基本生理指标在正常范围内，但缺乏连续监测和睡眠结构数据使得任何深入分析都不可行。建议使用专业睡眠监测设备收集更全面的数据后再进行评估。"</em></p>
+    </div>
+</body>
+</html>
