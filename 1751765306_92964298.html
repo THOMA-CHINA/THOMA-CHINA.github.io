@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .good {
+            color: #27ae60;
+        }
+        .warning {
+            color: #f39c12;
+        }
+        .alert {
+            color: #e74c3c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .recommendation {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <p>2025年7月5日 - 2025年7月6日</p>
+    </div>
+
+    <div class="section">
+        <h2>总体睡眠评分</h2>
+        <p class="score good">85/100</p>
+        <p>您的睡眠质量总体良好，但仍有改善空间。</p>
+    </div>
+
+    <div class="section">
+        <h2>睡眠结构分析</h2>
+        <p>由于您未提供具体的各阶段睡眠时长数据，我们无法进行详细的睡眠阶段分析。完整的睡眠结构分析需要包含以下阶段的数据：</p>
+        <ul>
+            <li>清醒时间</li>
+            <li>浅睡眠(N1+N2)</li>
+            <li>深睡眠(N3)</li>
+            <li>REM睡眠</li>
+        </ul>
+        <p>请提供这些数据以获得更准确的评估。</p>
+    </div>
+
+    <div class="section">
+        <h2>血氧水平分析</h2>
+        <table>
+            <tr>
+                <th>指标</th>
+                <th>数值</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>平均血氧水平</td>
+                <td>96.2%</td>
+                <td class="good">正常</td>
+            </tr>
+            <tr>
+                <td>最低血氧水平</td>
+                <td>93%</td>
+                <td class="warning">略低</td>
+            </tr>
+            <tr>
+                <td>血氧波动</td>
+                <td>93%-99%</td>
+                <td class="warning">中度波动</td>
+            </tr>
+        </table>
+        <p>您的血氧水平总体正常，但存在以下需要注意的情况：</p>
+        <ul>
+            <li>入睡初期(23:20)和起床前(08:21)出现93%的血氧水平，略低于理想范围(95%-100%)</li>
+            <li>睡眠期间血氧波动幅度达6%，表明可能存在轻度呼吸不稳定</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>心率变异性(HRV)分析</h2>
+        <table>
+            <tr>
+                <th>时间</th>
+                <th>HRV值(ms)</th>
+                <th>评估</th>
+            </tr>
+            <tr>
+                <td>入睡初期</td>
+                <td>30.95-61.92</td>
+                <td class="warning">波动较大</td>
+            </tr>
+            <tr>
+                <td>深度睡眠期</td>
+                <td>47.79-54.05</td>
+                <td class="good">稳定</td>
+            </tr>
+            <tr>
+                <td>REM睡眠期</td>
+                <td>91.01</td>
+                <td class="good">良好</td>
+            </tr>
+            <tr>
+                <td>晨间</td>
+                <td>51.03</td>
+                <td class="good">正常</td>
+            </tr>
+        </table>
+        <p>您的心率变异性表现出以下特点：</p>
+        <ul>
+            <li>入睡初期HRV波动较大(30.95-61.92ms)，表明入睡过程可能不够放松</li>
+            <li>深度睡眠期HRV稳定在理想范围(47.79-54.05ms)</li>
+            <li>REM睡眠期HRV显著升高(91.01ms)，表明自主神经系统调节良好</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>潜在风险提示</h2>
+        <ul>
+            <li>入睡初期和起床前的低血氧水平(93%)可能与体位或轻度呼吸不畅有关</li>
+            <li>入睡初期HRV波动较大，提示可能存在入睡困难或睡前紧张</li>
+            <li>缺乏具体睡眠阶段数据，无法评估睡眠结构是否平衡</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>改善建议</h2>
+        <div class="recommendation">
+            <h3>针对血氧水平</h3>
+            <ul>
+                <li>尝试侧卧睡姿，可减少呼吸道阻塞风险</li>
+                <li>睡前避免饮酒和镇静类药物，这些会加重呼吸抑制</li>
+                <li>如持续观察到血氧低于90%，建议咨询医生进行睡眠呼吸评估</li>
+            </ul>
+        </div>
+        
+        <div class="recommendation">
+            <h3>针对心率变异性</h3>
+            <ul>
+                <li>建立规律的睡前放松程序，如冥想、深呼吸练习</li>
+                <li>睡前1小时避免使用电子设备，减少蓝光暴露</li>
+                <li>保持卧室环境凉爽(18-22°C)、黑暗和安静</li>
+            </ul>
+        </div>
+        
+        <div class="recommendation">
+            <h3>一般睡眠建议</h3>
+            <ul>
+                <li>保持规律的睡眠-觉醒时间表，即使在周末也尽量保持一致</li>
+                <li>白天进行适量运动，但避免在睡前3小时内剧烈运动</li>
+                <li>限制咖啡因摄入，特别是在下午和晚上</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>专家锐评</h2>
+        <p>您的睡眠数据展现出"良好的基础但有轻微波动"的特点 - 血氧水平总体正常但有轻度波动，心率变异性在睡眠中后期表现良好但入睡初期不够稳定，这些迹象共同描绘出一幅"基本健康但存在优化空间"的睡眠图景。特别值得注意的是入睡和起床时的血氧下降，这可能是体位影响或轻度呼吸道不畅的信号，建议重点关注并尝试改善睡姿。若能提供完整的睡眠阶段数据，将能给出更精准的评估和建议。</p>
+    </div>
+</body>
+</html>
