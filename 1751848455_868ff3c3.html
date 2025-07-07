@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #4a6fa5;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a6fa5;
+        }
+        .chart {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .improvement {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .risk {
+            background-color: #fde8e8;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估报告</h1>
+        <p>2025年7月6日 - 7月7日</p>
+    </div>
+
+    <div class="section">
+        <h2>总体睡眠评分</h2>
+        <p class="score">75/100</p>
+        <p>您的睡眠质量中等，有改善空间。主要问题在于深度睡眠比例不足和夜间多次短暂觉醒。</p>
+    </div>
+
+    <div class="chart">
+        <h2>睡眠结构分析</h2>
+        <table>
+            <tr>
+                <th>睡眠阶段</th>
+                <th>时长(分钟)</th>
+                <th>占比</th>
+                <th>理想范围</th>
+            </tr>
+            <tr>
+                <td>核心睡眠</td>
+                <td>317</td>
+                <td>64.7%</td>
+                <td>45-55%</td>
+            </tr>
+            <tr>
+                <td>深度睡眠</td>
+                <td>56</td>
+                <td>11.4%</td>
+                <td>15-25%</td>
+            </tr>
+            <tr>
+                <td>快速动眼睡眠</td>
+                <td>104</td>
+                <td>21.2%</td>
+                <td>20-25%</td>
+            </tr>
+            <tr>
+                <td>清醒时间</td>
+                <td>11</td>
+                <td>2.7%</td>
+                <td>&lt;5%</td>
+            </tr>
+        </table>
+        <p>您的核心睡眠比例偏高，而深度睡眠比例偏低。深度睡眠对身体的恢复至关重要，建议采取措施增加深度睡眠时间。</p>
+    </div>
+
+    <div class="section">
+        <h2>血氧水平分析</h2>
+        <p>您的血氧水平在睡眠期间保持在94%-100%之间，平均为97.2%。虽然最低值94%仍在正常范围内，但建议关注凌晨4:58和7:43出现的两次血氧下降(分别至94%和92%)。</p>
+    </div>
+
+    <div class="section">
+        <h2>心率变异性分析</h2>
+        <p>您的心率变异性(HRV)在27.239-57.345 ms之间波动，平均为40.22 ms。早晨7:27的HRV最高(57.345 ms)，表明此时自主神经系统恢复良好。但凌晨3:27的HRV较低(27.239 ms)，可能与深度睡眠不足有关。</p>
+    </div>
+
+    <div class="improvement">
+        <h2>睡眠优化建议</h2>
+        <h3>增加深度睡眠</h3>
+        <ul>
+            <li>睡前1-2小时避免使用电子设备，蓝光会抑制褪黑素分泌</li>
+            <li>保持卧室温度在18-22°C之间，凉爽环境有助于深度睡眠</li>
+            <li>尝试睡前进行10分钟深呼吸或冥想练习</li>
+        </ul>
+        
+        <h3>减少夜间觉醒</h3>
+        <ul>
+            <li>下午3点后避免摄入咖啡因</li>
+            <li>睡前3小时避免大量进食和饮酒</li>
+            <li>确保卧室完全黑暗，考虑使用遮光窗帘</li>
+        </ul>
+        
+        <h3>血氧优化</h3>
+        <ul>
+            <li>尝试侧卧睡姿，可能有助于改善呼吸</li>
+            <li>如有打鼾情况，建议咨询医生评估是否存在睡眠呼吸暂停</li>
+            <li>保持卧室空气流通，考虑使用空气净化器</li>
+        </ul>
+    </div>
+
+    <div class="risk">
+        <h2>潜在风险提示</h2>
+        <p>凌晨出现的两次血氧下降(至94%和92%)值得关注，尤其是92%的血氧水平已接近临床关注阈值。如果这种情况频繁发生，建议进行专业的睡眠呼吸监测。</p>
+    </div>
+
+    <div class="section">
+        <h2>专家锐评</h2>
+        <p>这是一次结构失衡的睡眠，虽然总睡眠时间充足(8小时10分钟)，但深度睡眠严重不足(仅56分钟)，且睡眠连续性被多次短暂觉醒打断。核心睡眠占比过高(64.7%)表明睡眠质量不高，身体未能获得足够的深度修复。凌晨出现的血氧下降提示可能存在轻度呼吸问题，需要进一步观察。建议从改善睡眠环境和睡前习惯入手，重点提升深度睡眠质量。</p>
+    </div>
+</body>
+</html>
