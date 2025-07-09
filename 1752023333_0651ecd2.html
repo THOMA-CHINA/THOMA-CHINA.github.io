@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .progress-container {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #3498db;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .warning {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .good {
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h1>睡眠质量评估报告</h1>
+    
+    <div class="card">
+        <h2>总体睡眠评分</h2>
+        <p class="score">78/100</p>
+        <p>您的睡眠质量中等偏上，但仍有改善空间。主要优势是良好的睡眠连续性和充足的快速动眼睡眠，但深度睡眠比例偏低。</p>
+    </div>
+    
+    <div class="card">
+        <h2>睡眠结构分析</h2>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 59%">核心睡眠 59% (238分钟)</div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 11%; background-color: #2ecc71">深度睡眠 11% (45分钟)</div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 30%; background-color: #9b59b6">快速动眼睡眠 30% (121分钟)</div>
+        </div>
+        
+        <h3>睡眠结构评估</h3>
+        <p><span class="good">✓</span> 快速动眼睡眠占比<span class="highlight">30%</span>，处于健康范围(20-25%)的上限，表明您获得了充足的梦境睡眠，这对记忆巩固和情绪调节非常重要。</p>
+        <p><span class="warning">⚠</span> 深度睡眠仅占<span class="highlight">11%</span>，低于理想的15-20%范围。深度睡眠对身体修复和免疫系统功能至关重要。</p>
+        <p>睡眠连续性良好，夜间仅短暂觉醒<span class="highlight">2次</span>，总清醒时间<span class="highlight">0分钟</span>。</p>
+    </div>
+    
+    <div class="card">
+        <h2>血氧与心率变异性分析</h2>
+        <p>平均血氧水平为<span class="highlight">96.6%</span>，最低值为<span class="highlight">94%</span>，属于正常范围。</p>
+        <p>心率变异性(HRV)从入睡前的<span class="highlight">38-40ms</span>上升到早晨的<span class="highlight">68ms</span>，表明您的自主神经系统在夜间得到了良好的恢复。</p>
+    </div>
+    
+    <div class="card">
+        <h2>改善建议</h2>
+        <h3>增加深度睡眠</h3>
+        <ul>
+            <li>睡前1-2小时避免蓝光暴露(手机、电脑等)</li>
+            <li>保持卧室温度在<span class="highlight">18-20°C</span>之间，较凉爽的环境有助于深度睡眠</li>
+            <li>考虑补充<span class="highlight">镁元素</span>，可能有助于改善深度睡眠质量</li>
+        </ul>
+        
+        <h3>维持优质睡眠</h3>
+        <ul>
+            <li>继续保持规律的睡眠时间表</li>
+            <li>白天进行适量运动，但避免睡前3小时剧烈运动</li>
+            <li>限制咖啡因摄入，特别是下午晚些时候</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>专家锐评</h2>
+        <p>这是一次<span class="highlight">结构基本合理但深度睡眠不足</span>的睡眠。您获得了充足的快速动眼睡眠，表明认知和情绪处理功能得到良好支持，但身体修复可能不够充分。睡眠连续性很好，几乎没有夜间觉醒，这是很多睡眠不佳者羡慕的。建议重点关注提升深度睡眠的方法，特别是温度调节和睡前放松。</p>
+    </div>
+</body>
+</html>
