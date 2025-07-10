@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .header .date {
+            color: #999;
+            font-size: 14px;
+        }
+        .score-card {
+            background: linear-gradient(135deg, #517ea6, #3a6ea5);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .score-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-value {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .stage-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .chart-container {
+            height: 150px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .bar-chart {
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+        }
+        .bar {
+            flex: 1;
+            margin: 0 2px;
+            border-radius: 4px 4px 0 0;
+            position: relative;
+        }
+        .bar-label {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .section-title:before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 16px;
+            background-color: #3a6ea5;
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+        .problem-item, .advice-item {
+            display: flex;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        .problem-icon, .advice-icon {
+            margin-right: 10px;
+            color: #ff4d4f;
+            font-size: 18px;
+        }
+        .advice-icon {
+            color: #52c41a;
+        }
+        .problem-content, .advice-content {
+            flex: 1;
+        }
+        .problem-title, .advice-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .problem-desc, .advice-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .expert-comment {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            border-left: 4px solid #3a6ea5;
+        }
+        .expert-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>睡眠质量评估日报</h1>
+            <div class="date">2025年7月10日</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">今日睡眠评分</div>
+            <div class="score">78</div>
+            <div class="score-label">良好</div>
+            
+            <div class="sleep-stages">
+                <div class="stage">
+                    <div class="stage-value">5h15m</div>
+                    <div class="stage-label">核心睡眠</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-value">1h15m</div>
+                    <div class="stage-label">深度睡眠</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-value">1h24m</div>
+                    <div class="stage-label">REM睡眠</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-value">25m</div>
+                    <div class="stage-label">清醒时间</div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="bar-chart">
+                    <div class="bar" style="height: 65%; background-color: #6c9bc9;">
+                        <div class="bar-label">65%</div>
+                    </div>
+                    <div class="bar" style="height: 20%; background-color: #3a6ea5;">
+                        <div class="bar-label">20%</div>
+                    </div>
+                    <div class="bar" style="height: 22%; background-color: #8ab4e0;">
+                        <div class="bar-label">22%</div>
+                    </div>
+                    <div class="bar" style="height: 7%; background-color: #c4d8ed;">
+                        <div class="bar-label">7%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">潜在问题</div>
+            <div class="problem-item">
+                <div class="problem-icon">⚠️</div>
+                <div class="problem-content">
+                    <div class="problem-title">深度睡眠不足</div>
+                    <div class="problem-desc">您的深度睡眠占比为20%，略低于理想水平(25-30%)。深度睡眠对身体的修复和免疫系统至关重要。</div>
+                </div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">⚠️</div>
+                <div class="problem-content">
+                    <div class="problem-title">夜间多次觉醒</div>
+                    <div class="problem-desc">记录显示您夜间有多次短暂清醒，这可能影响睡眠的连续性，导致白天疲劳。</div>
+                </div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">⚠️</div>
+                <div class="problem-content">
+                    <div class="problem-title">血氧波动</div>
+                    <div class="problem-desc">您的血氧水平在夜间有较大波动，最低降至88%，可能影响睡眠质量。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">改善建议</div>
+            <div class="advice-item">
+                <div class="advice-icon">💡</div>
+                <div class="advice-content">
+                    <div class="advice-title">规律作息时间</div>
+                    <div class="advice-desc">尽量每天同一时间上床和起床，帮助建立稳定的生物钟，提高深度睡眠质量。</div>
+                </div>
+            </div>
+            <div class="advice-item">
+                <div class="advice-icon">💡</div>
+                <div class="advice-content">
+                    <div class="advice-title">睡前放松活动</div>
+                    <div class="advice-desc">睡前1小时进行冥想、深呼吸或轻度拉伸，减少夜间觉醒次数。</div>
+                </div>
+            </div>
+            <div class="advice-item">
+                <div class="advice-icon">💡</div>
+                <div class="advice-content">
+                    <div class="advice-title">改善睡眠环境</div>
+                    <div class="advice-desc">保持卧室温度适宜(18-22℃)，使用遮光窗帘，考虑使用白噪音机减少干扰。</div>
+                </div>
+            </div>
+            <div class="advice-item">
+                <div class="advice-icon">💡</div>
+                <div class="advice-content">
+                    <div class="advice-title">监测血氧水平</div>
+                    <div class="advice-desc">如果血氧持续低于90%，建议咨询医生检查是否存在睡眠呼吸问题。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">专家锐评</div>
+            <div class="expert-comment">
+                <div class="expert-text">
+                    "您的睡眠结构基本正常，但深度睡眠比例有待提高。夜间多次短暂觉醒可能与压力或环境因素有关。建议关注睡前放松和睡眠环境优化。血氧波动值得关注，如果持续出现低血氧情况，建议进行专业睡眠监测。整体而言，您的睡眠质量处于中等偏上水平，通过一些调整还有提升空间。"
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            数据更新于2025年7月10日 09:20 | 本报告仅供参考，不作为医疗诊断依据
+        </div>
+    </div>
+</body>
+</html>
