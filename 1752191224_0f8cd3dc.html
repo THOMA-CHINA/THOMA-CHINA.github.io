@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #d43c33;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .header p {
+            color: #999;
+            font-size: 14px;
+        }
+        .score-card {
+            background: linear-gradient(135deg, #d43c33, #f06d6d);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            margin: 0 5px;
+        }
+        .stage h3 {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .stage p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+        }
+        .section h2 {
+            font-size: 18px;
+            color: #d43c33;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .section p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #666;
+            border-left: 3px solid #d43c33;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>睡眠质量评估日报</h1>
+            <p>2025年7月11日</p>
+        </div>
+        
+        <div class="score-card">
+            <h2>今日睡眠评分</h2>
+            <div class="score">78</div>
+            <p>中等睡眠质量</p>
+        </div>
+        
+        <div class="sleep-stages">
+            <div class="stage">
+                <h3>核心睡眠</h3>
+                <p>201分钟</p>
+                <p>56%</p>
+            </div>
+            <div class="stage">
+                <h3>深度睡眠</h3>
+                <p>67分钟</p>
+                <p>19%</p>
+            </div>
+            <div class="stage">
+                <h3>快速动眼</h3>
+                <p>76分钟</p>
+                <p>21%</p>
+            </div>
+            <div class="stage">
+                <h3>清醒时间</h3>
+                <p>14分钟</p>
+                <p>4%</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>潜在问题</h2>
+            <p>• 深度睡眠比例略低于理想水平(20-25%)</p>
+            <p>• 凌晨5点左右血氧饱和度下降至91%，可能存在呼吸问题</p>
+            <p>• 清晨清醒次数较多，影响睡眠连续性</p>
+        </div>
+        
+        <div class="section">
+            <h2>改善建议</h2>
+            <p>• 保持规律的睡眠时间表，帮助稳定生物钟</p>
+            <p>• 睡前避免饮酒和咖啡因，减少夜间觉醒</p>
+            <p>• 考虑侧卧睡姿，可能改善呼吸质量</p>
+            <p>• 白天适当运动，有助于增加深度睡眠</p>
+        </div>
+        
+        <div class="section">
+            <h2>专家锐评</h2>
+            <p>您的睡眠结构基本合理，但深度睡眠不足和清晨频繁觉醒影响了整体质量。血氧波动值得关注，建议持续监测。快速动眼睡眠比例良好，说明梦境睡眠充足。</p>
+            <p class="expert-comment">"睡眠就像一首交响乐，每个阶段都有其独特的韵律。您的乐章中，深度睡眠的段落略显单薄，需要更多'低音'来平衡整体效果。"</p>
+        </div>
+        
+        <div class="footer">
+            <p>网易云健康睡眠评估系统 © 2025</p>
+        </div>
+    </div>
+</body>
+</html>
