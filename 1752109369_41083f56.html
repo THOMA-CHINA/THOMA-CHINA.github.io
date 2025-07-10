@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报 - 2025-07-10</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0, 150, 255, 0.2);
+            border: 1px solid #2a2a2a;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+        h1 {
+            color: #4fc3f7;
+            margin: 0;
+            font-size: 28px;
+        }
+        h2 {
+            color: #64b5f6;
+            margin-top: 25px;
+            font-size: 22px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #4fc3f7;
+            text-align: center;
+            margin: 20px 0;
+            text-shadow: 0 0 10px rgba(79, 195, 247, 0.5);
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        .stage {
+            background-color: #252525;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 10px 0;
+            flex-basis: 22%;
+            text-align: center;
+            border-left: 4px solid;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        .stage.core {
+            border-color: #4fc3f7;
+        }
+        .stage.deep {
+            border-color: #9575cd;
+        }
+        .stage.rem {
+            border-color: #4db6ac;
+        }
+        .stage.awake {
+            border-color: #ff7043;
+        }
+        .stage h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .stage .duration {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stage .percentage {
+            color: #aaa;
+        }
+        .issues, .recommendations, .expert-comment {
+            background-color: #252525;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #4fc3f7;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+        .chart-container {
+            height: 200px;
+            margin: 25px 0;
+            background-color: #252525;
+            border-radius: 6px;
+            padding: 15px;
+            position: relative;
+        }
+        .chart-placeholder {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>睡眠质量评估日报</h1>
+            <p>2025年7月10日 | 生成时间: 09:02:06</p>
+        </div>
+
+        <div class="score">
+            76
+            <div style="font-size: 16px; margin-top: 5px;">睡眠分数</div>
+        </div>
+
+        <h2>睡眠阶段分析</h2>
+        <div class="sleep-stages">
+            <div class="stage core">
+                <h3>核心睡眠</h3>
+                <div class="duration">3小时15分钟</div>
+                <div class="percentage">51.6%</div>
+            </div>
+            <div class="stage deep">
+                <h3>深度睡眠</h3>
+                <div class="duration">1小时15分钟</div>
+                <div class="percentage">19.8%</div>
+            </div>
+            <div class="stage rem">
+                <h3>快速动眼睡眠</h3>
+                <div class="duration">1小时24分钟</div>
+                <div class="percentage">22.2%</div>
+            </div>
+            <div class="stage awake">
+                <h3>清醒时间</h3>
+                <div class="duration">25分钟</div>
+                <div class="percentage">6.4%</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-placeholder">[睡眠阶段分布图表]</div>
+        </div>
+
+        <h2>潜在问题</h2>
+        <div class="issues">
+            <ul>
+                <li><span class="highlight">深度睡眠比例偏低</span> - 仅占19.8%，低于理想的20-25%范围</li>
+                <li><span class="highlight">夜间多次觉醒</span> - 记录显示有4次明显的清醒时段</li>
+                <li><span class="highlight">血氧波动</span> - 最低降至88%，可能存在轻度呼吸问题</li>
+                <li><span class="highlight">心率变异性不稳定</span> - 从18.408ms到54.293ms的较大波动</li>
+            </ul>
+        </div>
+
+        <h2>改善建议</h2>
+        <div class="recommendations">
+            <ul>
+                <li><span class="highlight">调整睡眠环境</span> - 确保卧室温度适宜(18-22°C)，减少光线和噪音干扰</li>
+                <li><span class="highlight">规律作息</span> - 尽量固定入睡和起床时间，包括周末</li>
+                <li><span class="highlight">睡前放松</span> - 睡前1小时避免使用电子设备，尝试冥想或深呼吸练习</li>
+                <li><span class="highlight">监测呼吸</span> - 考虑进行睡眠呼吸筛查，特别是血氧较低时段</li>
+                <li><span class="highlight">适度运动</span> - 白天进行30分钟中等强度运动，但避免睡前3小时剧烈运动</li>
+            </ul>
+        </div>
+
+        <h2>专家锐评</h2>
+        <div class="expert-comment">
+            <p>"您的睡眠结构显示出<span class="highlight">碎片化特征</span>，核心睡眠占比过高而深度睡眠不足。多次夜间觉醒可能与血氧波动有关，建议特别关注凌晨5-7点的低血氧时段(88%)。心率变异性数据显示您的自主神经系统在夜间经历了较大波动，这可能反映了<span class="highlight">睡眠质量不稳定</span>。虽然快速动眼睡眠比例正常，但分布不够连续。整体而言，您的睡眠还有较大优化空间，建议优先解决呼吸问题和睡眠环境因素。"</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 健康睡眠质量评估系统 | 本报告仅供参考，如有健康疑虑请咨询专业医师</p>
+        </div>
+    </div>
+</body>
+</html>
