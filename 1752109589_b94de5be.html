@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报 - 2025-07-10</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .header .date {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .card-title {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #3498db;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+            padding: 10px;
+        }
+        .stage-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .stage-label {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .progress-container {
+            height: 8px;
+            background: #ecf0f1;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 4px;
+        }
+        .issues-list, .recommendations-list {
+            padding-left: 20px;
+        }
+        .issues-list li {
+            color: #e74c3c;
+            margin-bottom: 8px;
+        }
+        .recommendations-list li {
+            color: #27ae60;
+            margin-bottom: 8px;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #7f8c8d;
+            padding: 15px;
+            background: #f5f7fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 4px 4px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .data-table th, .data-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        .data-table th {
+            background: #f5f7fa;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>睡眠质量评估日报</h1>
+        <div class="date">2025-07-10</div>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">睡眠概况</h2>
+        <div class="score">76</div>
+        <p style="text-align: center; color: #7f8c8d;">中等睡眠质量</p>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">睡眠阶段分析</h2>
+        <div class="sleep-stages">
+            <div class="stage">
+                <div class="stage-value">195分钟</div>
+                <div class="stage-label">核心睡眠</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 52%; background-color: #3498db;"></div>
+                </div>
+                <div>52%</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">75分钟</div>
+                <div class="stage-label">深度睡眠</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 20%; background-color: #2ecc71;"></div>
+                </div>
+                <div>20%</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">84分钟</div>
+                <div class="stage-label">快速动眼</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 22%; background-color: #9b59b6;"></div>
+                </div>
+                <div>22%</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">25分钟</div>
+                <div class="stage-label">清醒时间</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 7%; background-color: #e74c3c;"></div>
+                </div>
+                <div>7%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">潜在问题</h2>
+        <ul class="issues-list">
+            <li>深度睡眠比例(20%)略低于理想范围(20-25%)</li>
+            <li>夜间有多次短暂清醒(共25分钟)，影响睡眠连续性</li>
+            <li>凌晨5:42-5:58有16分钟的长时间清醒</li>
+            <li>血氧水平在夜间有波动，最低降至88%</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">改善建议</h2>
+        <ul class="recommendations-list">
+            <li>保持规律的睡眠时间表，包括周末</li>
+            <li>睡前1小时避免使用电子设备，减少蓝光暴露</li>
+            <li>尝试睡前冥想或深呼吸练习，减少夜间觉醒</li>
+            <li>保持卧室温度在18-22°C，确保环境黑暗安静</li>
+            <li>考虑进行睡眠呼吸暂停筛查，特别是血氧波动问题</li>
+            <li>下午避免摄入咖啡因和酒精</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">专家锐评</h2>
+        <div class="expert-comment">
+            "您的睡眠结构基本正常，但存在碎片化问题。深度睡眠虽然总量达标，但分布不够集中。凌晨的长时间清醒可能是由压力或环境干扰导致。血氧波动值得关注，建议持续监测。整体而言，通过优化睡眠环境和习惯，您的睡眠质量有望提升到80分以上。"
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">详细数据</h2>
+        <table class="data-table">
+            <tr>
+                <th>指标</th>
+                <th>数值</th>
+                <th>参考范围</th>
+            </tr>
+            <tr>
+                <td>总睡眠时间</td>
+                <td>6小时19分钟</td>
+                <td>7-9小时</td>
+            </tr>
+            <tr>
+                <td>睡眠效率</td>
+                <td>93%</td>
+                <td>>85%</td>
+            </tr>
+            <tr>
+                <td>入睡潜伏期</td>
+                <td>14分钟</td>
+                <td><30分钟</td>
+            </tr>
+            <tr>
+                <td>平均血氧饱和度</td>
+                <td>95%</td>
+                <td>≥94%</td>
+            </tr>
+            <tr>
+                <td>心率变异性(夜间)</td>
+                <td>35.1ms</td>
+                <td>30-50ms</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
