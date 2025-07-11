@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            color: #d43c33;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .header .date {
+            color: #999;
+            font-size: 14px;
+        }
+        .score-card {
+            background: linear-gradient(135deg, #ff5f6d, #ffc371);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .score {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .score-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-value {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .stage-label {
+            font-size: 14px;
+            color: #666;
+        }
+        .progress-container {
+            height: 8px;
+            background-color: #eee;
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 4px;
+        }
+        .core-sleep {
+            background-color: #4a90e2;
+            width: 56%;
+        }
+        .deep-sleep {
+            background-color: #50c9ba;
+            width: 19%;
+        }
+        .rem-sleep {
+            background-color: #d43c33;
+            width: 21%;
+        }
+        .awake {
+            background-color: #999;
+            width: 4%;
+        }
+        .problem-card {
+            background-color: #fef6f6;
+            border-left: 4px solid #ff5f6d;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+        .problem-title {
+            color: #d43c33;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .suggestion-card {
+            background-color: #f6f9fe;
+            border-left: 4px solid #4a90e2;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+        .suggestion-title {
+            color: #4a90e2;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .expert-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 25px;
+        }
+        .expert-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .tag-red {
+            background-color: #ffebee;
+            color: #d43c33;
+        }
+        .tag-blue {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        .tag-green {
+            background-color: #e8f5e9;
+            color: #388e3c;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>睡眠质量评估日报</h1>
+            <div class="date">2025年7月11日</div>
+        </div>
+        
+        <div class="score-card">
+            <div class="score-label">今日睡眠评分</div>
+            <div class="score">78</div>
+            <div>中等质量睡眠</div>
+        </div>
+        
+        <div class="section-title">睡眠阶段分析</div>
+        <div class="sleep-stages">
+            <div class="stage">
+                <div class="stage-value">3h21m</div>
+                <div class="stage-label">核心睡眠</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">1h7m</div>
+                <div class="stage-label">深度睡眠</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">1h16m</div>
+                <div class="stage-label">快速眼动</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">14m</div>
+                <div class="stage-label">清醒时间</div>
+            </div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar core-sleep"></div>
+            <div class="progress-bar deep-sleep"></div>
+            <div class="progress-bar rem-sleep"></div>
+            <div class="progress-bar awake"></div>
+        </div>
+        
+        <div class="section-title">潜在问题</div>
+        <div class="problem-card">
+            <div class="problem-title">需要注意的睡眠问题</div>
+            <ul>
+                <li>深度睡眠比例偏低(19%)，低于理想范围(20-25%)</li>
+                <li>凌晨5点左右血氧饱和度降至91%，可能存在短暂呼吸不畅</li>
+                <li>清晨清醒次数较多，影响睡眠连续性</li>
+            </ul>
+            <div>
+                <span class="tag tag-red">深度睡眠不足</span>
+                <span class="tag tag-red">血氧波动</span>
+                <span class="tag tag-red">睡眠碎片化</span>
+            </div>
+        </div>
+        
+        <div class="section-title">改善建议</div>
+        <div class="suggestion-card">
+            <div class="suggestion-title">提升睡眠质量的建议</div>
+            <ul>
+                <li>睡前2小时避免使用电子设备，减少蓝光影响</li>
+                <li>保持卧室温度在18-22℃，创造适宜睡眠环境</li>
+                <li>尝试侧卧睡姿，可能有助于改善呼吸质量</li>
+                <li>规律作息时间，尽量固定起床和入睡时间</li>
+                <li>下午适度运动，但避免睡前3小时剧烈运动</li>
+            </ul>
+            <div>
+                <span class="tag tag-blue">作息规律</span>
+                <span class="tag tag-blue">睡眠环境</span>
+                <span class="tag tag-blue">呼吸改善</span>
+            </div>
+        </div>
+        
+        <div class="expert-card">
+            <div class="expert-title">专家锐评</div>
+            <p>"您的睡眠结构基本正常，但深度睡眠比例稍显不足。清晨时段的多次觉醒可能是导致您白天感到疲倦的主要原因。血氧饱和度在凌晨的短暂下降值得关注，建议观察是否与睡姿或呼吸道状况有关。整体而言，通过改善睡眠环境和作息规律，您的睡眠质量还有提升空间。"</p>
+            <div>
+                <span class="tag tag-green">中等质量</span>
+                <span class="tag tag-green">可改善</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
