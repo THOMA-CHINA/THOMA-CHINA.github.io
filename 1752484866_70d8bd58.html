@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #d43c33;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .header p {
+            color: #999;
+            font-size: 14px;
+        }
+        .score-card {
+            background: linear-gradient(135deg, #d43c33, #e67e22);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .score {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .score-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+            padding: 10px;
+        }
+        .stage-value {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .stage-label {
+            font-size: 14px;
+            color: #666;
+        }
+        .progress-container {
+            height: 8px;
+            background-color: #eee;
+            border-radius: 4px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 4px;
+        }
+        .core-sleep {
+            background-color: #3498db;
+            width: 49.3%;
+        }
+        .deep-sleep {
+            background-color: #2ecc71;
+            width: 19.3%;
+        }
+        .rem-sleep {
+            background-color: #9b59b6;
+            width: 26.9%;
+        }
+        .awake {
+            background-color: #e74c3c;
+            width: 3.9%;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .section-title i {
+            margin-right: 8px;
+            color: #d43c33;
+        }
+        .problem-item, .advice-item {
+            display: flex;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        .problem-icon, .advice-icon {
+            margin-right: 10px;
+            color: #e74c3c;
+        }
+        .advice-icon {
+            color: #2ecc71;
+        }
+        .problem-content, .advice-content {
+            flex: 1;
+        }
+        .problem-title, .advice-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .problem-desc, .advice-desc {
+            font-size: 14px;
+            color: #666;
+        }
+        .expert-review {
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            padding: 15px;
+            border-left: 4px solid #d43c33;
+        }
+        .expert-text {
+            font-style: italic;
+            color: #555;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>睡眠质量评估日报</h1>
+            <p>2025年7月14日</p>
+        </div>
+        
+        <div class="score-card">
+            <div class="score-label">今日睡眠评分</div>
+            <div class="score">82</div>
+            <div>良好</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i>📊</i>睡眠阶段分析
+            </div>
+            <div class="sleep-stages">
+                <div class="stage">
+                    <div class="stage-value">3h34m</div>
+                    <div class="stage-label">核心睡眠</div>
+                    <div>49.3%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-value">1h24m</div>
+                    <div class="stage-label">深度睡眠</div>
+                    <div>19.3%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-value">1h57m</div>
+                    <div class="stage-label">REM睡眠</div>
+                    <div>26.9%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-value">17m</div>
+                    <div class="stage-label">清醒时间</div>
+                    <div>3.9%</div>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar core-sleep"></div>
+                <div class="progress-bar deep-sleep"></div>
+                <div class="progress-bar rem-sleep"></div>
+                <div class="progress-bar awake"></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i>⚠️</i>潜在问题
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">🔴</div>
+                <div class="problem-content">
+                    <div class="problem-title">深度睡眠不足</div>
+                    <div class="problem-desc">您的深度睡眠时间(84分钟)略低于健康标准(90-120分钟)，可能影响身体修复和免疫系统功能。</div>
+                </div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">🟡</div>
+                <div class="problem-content">
+                    <div class="problem-title">血氧波动</div>
+                    <div class="problem-desc">您的血氧水平在夜间最低降至91%，建议关注呼吸健康。</div>
+                </div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">🟡</div>
+                <div class="problem-content">
+                    <div class="problem-title">睡眠碎片化</div>
+                    <div class="problem-desc">您的睡眠被多次短暂清醒打断，最长清醒时间11分钟，影响睡眠连续性。</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i>💡</i>改善建议
+            </div>
+            <div class="advice-item">
+                <div class="advice-icon">✅</div>
+                <div class="advice-content">
+                    <div class="advice-title">增加深度睡眠</div>
+                    <div class="advice-desc">睡前2小时避免剧烈运动和蓝光暴露，尝试温水浴或轻度阅读来促进深度睡眠。</div>
+                </div>
+            </div>
+            <div class="advice-item">
+                <div class="advice-icon">✅</div>
+                <div class="advice-content">
+                    <div class="advice-title">呼吸健康</div>
+                    <div class="advice-desc">侧卧睡姿可能有助于改善呼吸，避免睡前饮酒和使用安眠药物。</div>
+                </div>
+            </div>
+            <div class="advice-item">
+                <div class="advice-icon">✅</div>
+                <div class="advice-content">
+                    <div class="advice-title">减少碎片化</div>
+                    <div class="advice-desc">保持卧室温度稳定，使用白噪音机减少环境干扰，建立规律的睡眠-觉醒周期。</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i>👨‍⚕️</i>专家锐评
+            </div>
+            <div class="expert-review">
+                <div class="expert-text">
+                    "您的REM睡眠时间充足(117分钟)，说明梦境睡眠质量良好，这是认知功能恢复的重要指标。深度睡眠略不足但仍在可接受范围，血氧波动需要持续关注。睡眠碎片化问题可以通过改善睡眠环境和睡前习惯来缓解。整体睡眠结构合理，建议继续保持规律作息，并监测一周的血氧变化趋势。"
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            数据更新于2025年7月14日 17:19:58 · 本报告仅供参考
+        </div>
+    </div>
+</body>
+</html>
