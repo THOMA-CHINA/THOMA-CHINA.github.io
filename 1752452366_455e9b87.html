@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #517ea3 0%, #396a9a 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .header .date {
+            opacity: 0.8;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .score-section {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #396a9a;
+            margin: 10px 0;
+        }
+        .score-label {
+            font-size: 14px;
+            color: #666;
+        }
+        .sleep-stages {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .stage-item {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .stage-name {
+            width: 100px;
+            font-weight: 500;
+        }
+        .stage-bar {
+            flex-grow: 1;
+            height: 20px;
+            background-color: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .stage-progress {
+            height: 100%;
+            border-radius: 10px;
+        }
+        .stage-value {
+            width: 80px;
+            text-align: right;
+            font-size: 14px;
+            color: #666;
+        }
+        .issues-section, .recommendations-section, .expert-comment {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section-title {
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #396a9a;
+        }
+        .issue-item, .recommendation-item {
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .issue-icon, .recommendation-icon {
+            margin-right: 10px;
+            color: #396a9a;
+        }
+        .footer {
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>睡眠质量评估日报</h1>
+            <div class="date">2025年7月14日</div>
+        </div>
+        
+        <div class="score-section">
+            <div class="score-label">今日睡眠评分</div>
+            <div class="score">82</div>
+            <div>良好</div>
+        </div>
+        
+        <div class="sleep-stages">
+            <div class="section-title">睡眠阶段分析</div>
+            
+            <div class="stage-item">
+                <div class="stage-name">核心睡眠</div>
+                <div class="stage-bar">
+                    <div class="stage-progress" style="width: 50%; background-color: #517ea3;"></div>
+                </div>
+                <div class="stage-value">214分钟 (50%)</div>
+            </div>
+            
+            <div class="stage-item">
+                <div class="stage-name">深度睡眠</div>
+                <div class="stage-bar">
+                    <div class="stage-progress" style="width: 20%; background-color: #396a9a;"></div>
+                </div>
+                <div class="stage-value">84分钟 (20%)</div>
+            </div>
+            
+            <div class="stage-item">
+                <div class="stage-name">快速动眼</div>
+                <div class="stage-bar">
+                    <div class="stage-progress" style="width: 27%; background-color: #7d9cbf;"></div>
+                </div>
+                <div class="stage-value">117分钟 (27%)</div>
+            </div>
+            
+            <div class="stage-item">
+                <div class="stage-name">清醒时间</div>
+                <div class="stage-bar">
+                    <div class="stage-progress" style="width: 4%; background-color: #cccccc;"></div>
+                </div>
+                <div class="stage-value">17分钟 (4%)</div>
+            </div>
+        </div>
+        
+        <div class="issues-section">
+            <div class="section-title">潜在问题</div>
+            
+            <div class="issue-item">
+                <div class="issue-icon">⚠️</div>
+                <div>深度睡眠比例略低，可能影响身体恢复</div>
+            </div>
+            
+            <div class="issue-item">
+                <div class="issue-icon">⚠️</div>
+                <div>凌晨3:54血氧降至91%，需关注呼吸质量</div>
+            </div>
+            
+            <div class="issue-item">
+                <div class="issue-icon">⚠️</div>
+                <div>睡眠片段化，多次短暂清醒</div>
+            </div>
+        </div>
+        
+        <div class="recommendations-section">
+            <div class="section-title">改善建议</div>
+            
+            <div class="recommendation-item">
+                <div class="recommendation-icon">💡</div>
+                <div>睡前避免使用电子设备，创造更黑暗的睡眠环境</div>
+            </div>
+            
+            <div class="recommendation-item">
+                <div class="recommendation-icon">💡</div>
+                <div>尝试侧卧睡姿，可能改善呼吸质量</div>
+            </div>
+            
+            <div class="recommendation-item">
+                <div class="recommendation-icon">💡</div>
+                <div>保持规律的睡眠时间表，包括周末</div>
+            </div>
+            
+            <div class="recommendation-item">
+                <div class="recommendation-icon">💡</div>
+                <div>考虑进行轻度有氧运动，提高睡眠质量</div>
+            </div>
+        </div>
+        
+        <div class="expert-comment">
+            <div class="section-title">专家锐评</div>
+            <p>"您的睡眠结构总体良好，但深度睡眠不足和短暂的血氧下降值得关注。快速动眼睡眠比例理想，说明精神恢复较好。建议关注睡眠呼吸问题，并尝试延长深度睡眠时间。"</p>
+        </div>
+        
+        <div class="footer">
+            数据仅供参考，如有健康疑虑请咨询专业医生
+        </div>
+    </div>
+</body>
+</html>
