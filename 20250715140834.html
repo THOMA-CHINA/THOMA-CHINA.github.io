@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .tweet-name {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .tweet-username {
+            color: #536471;
+            margin-right: 5px;
+        }
+        .tweet-content {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .tweet-stats {
+            display: flex;
+            color: #536471;
+            font-size: 14px;
+        }
+        .stat {
+            margin-right: 20px;
+        }
+        .highlight {
+            color: #1da1f2;
+            font-weight: bold;
+        }
+        .sleep-stage {
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            height: 10px;
+            background-color: #e1e8ed;
+            border-radius: 5px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #1da1f2;
+        }
+        .problems, .suggestions, .expert-comment {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e1e8ed;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            color: #536471;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">Z</div>
+        <div class="title">睡眠质量评估日报</div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-header">
+            <span class="tweet-name">睡眠专家</span>
+            <span class="tweet-username">@SleepDoctor</span>
+            <span>· 2025-07-15</span>
+        </div>
+        <div class="tweet-content">
+            您的今日睡眠评估报告已生成！总体睡眠得分为 <span class="highlight">78/100</span>，属于中等偏上水平。让我们看看详细分析：
+        </div>
+        <div class="tweet-stats">
+            <div class="stat">总睡眠时间 <span class="highlight">7小时6分钟</span></div>
+            <div class="stat">入睡效率 <span class="highlight">92%</span></div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-header">
+            <span class="tweet-name">睡眠阶段分析</span>
+        </div>
+        <div class="tweet-content">
+            <div class="sleep-stage">
+                核心睡眠: 263分钟 (61.7%)
+                <div class="progress-bar">
+                    <div class="progress" style="width: 61.7%"></div>
+                </div>
+            </div>
+            <div class="sleep-stage">
+                深度睡眠: 57分钟 (13.4%)
+                <div class="progress-bar">
+                    <div class="progress" style="width: 13.4%"></div>
+                </div>
+            </div>
+            <div class="sleep-stage">
+                快速动眼睡眠: 102分钟 (23.9%)
+                <div class="progress-bar">
+                    <div class="progress" style="width: 23.9%"></div>
+                </div>
+            </div>
+            <div class="sleep-stage">
+                清醒时间: 4分钟 (0.9%)
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0.9%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-header">
+            <span class="tweet-name">潜在问题</span>
+        </div>
+        <div class="tweet-content">
+            <div class="problems">
+                <div class="section-title">⚠️ 需要注意的问题：</div>
+                <ul>
+                    <li>深度睡眠比例偏低(理想应为15-25%)</li>
+                    <li>夜间血氧水平有波动(最低降至90%)</li>
+                    <li>心率变异性在凌晨4点明显下降</li>
+                    <li>快速动眼睡眠分布不均匀</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-header">
+            <span class="tweet-name">改善建议</span>
+        </div>
+        <div class="tweet-content">
+            <div class="suggestions">
+                <div class="section-title">💡 提升睡眠质量的建议：</div>
+                <ul>
+                    <li>睡前2小时避免使用电子设备，减少蓝光暴露</li>
+                    <li>尝试侧卧睡姿，可能有助于改善血氧水平</li>
+                    <li>下午适度运动(如快走30分钟)可增加深度睡眠</li>
+                    <li>保持卧室温度在18-22℃之间</li>
+                    <li>考虑使用白噪音机减少夜间觉醒</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-header">
+            <span class="tweet-name">专家锐评</span>
+        </div>
+        <div class="tweet-content">
+            <div class="expert-comment">
+                "您的睡眠结构基本正常，但深度睡眠不足可能影响白天的精力恢复。血氧波动值得关注，建议观察一周数据，如持续低于92%应考虑咨询医生。快速动眼睡眠充足是积极信号，说明梦境睡眠质量不错。"
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        数据更新时间: 2025-07-15 14:08:34 · #睡眠健康 #数字健康
+    </div>
+</body>
+</html>
