@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .container {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+        .title {
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .score {
+            font-size: 72px;
+            font-weight: 800;
+            text-align: center;
+            margin: 20px 0;
+            color: #1da1f2;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-value {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .stage-label {
+            font-size: 14px;
+            color: #536471;
+        }
+        .chart {
+            height: 120px;
+            background: linear-gradient(to right, 
+                #1da1f2 20%, 
+                #794bc4 5%, 
+                #1da1f2 60%, 
+                #794bc4 15%);
+            border-radius: 8px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .chart-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #536471;
+        }
+        .section {
+            margin: 25px 0;
+        }
+        .section-title {
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title svg {
+            margin-right: 8px;
+        }
+        .problem, .advice {
+            background-color: #f7f9fc;
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .problem-title, .advice-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #e0245e;
+        }
+        .advice-title {
+            color: #17bf63;
+        }
+        .expert {
+            font-style: italic;
+            border-left: 4px solid #1da1f2;
+            padding-left: 12px;
+            color: #536471;
+        }
+        .footer {
+            font-size: 12px;
+            color: #536471;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">Z</div>
+            <div class="title">睡眠质量评估日报 · 2025-07-15</div>
+        </div>
+        
+        <div class="score">78</div>
+        
+        <div class="sleep-stages">
+            <div class="stage">
+                <div class="stage-value">6h 11m</div>
+                <div class="stage-label">总睡眠时间</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">57m</div>
+                <div class="stage-label">深度睡眠</div>
+            </div>
+            <div class="stage">
+                <div class="stage-value">1h 42m</div>
+                <div class="stage-label">REM睡眠</div>
+            </div>
+        </div>
+        
+        <div class="chart"></div>
+        <div class="chart-labels">
+            <div>22:00</div>
+            <div>02:00</div>
+            <div>06:00</div>
+            <div>10:00</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                潜在问题
+            </div>
+            <div class="problem">
+                <div class="problem-title">深度睡眠不足</div>
+                <div>您的深度睡眠仅占总睡眠时间的13.4%，低于推荐的20-25%范围。深度睡眠对身体的恢复至关重要。</div>
+            </div>
+            <div class="problem">
+                <div class="problem-title">血氧波动</div>
+                <div>夜间血氧水平有几次降至90-93%，这可能影响睡眠质量。建议检查睡眠呼吸情况。</div>
+            </div>
+            <div class="problem">
+                <div class="problem-title">睡眠片段化</div>
+                <div>您的睡眠被多次短暂清醒打断，这可能影响睡眠的连续性。</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 8v4l3 3"></path>
+                </svg>
+                改善建议
+            </div>
+            <div class="advice">
+                <div class="advice-title">睡前准备</div>
+                <div>睡前1小时避免使用电子设备，尝试阅读或冥想，帮助增加深度睡眠时间。</div>
+            </div>
+            <div class="advice">
+                <div class="advice-title">睡眠姿势</div>
+                <div>尝试侧卧睡姿，这可能有助于减少呼吸问题导致的血氧下降。</div>
+            </div>
+            <div class="advice">
+                <div class="advice-title">规律作息</div>
+                <div>保持每天相同的入睡和起床时间，有助于稳定您的睡眠结构。</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                专家锐评
+            </div>
+            <div class="expert">
+                "您的睡眠结构显示REM睡眠比例良好，但深度睡眠不足。血氧波动值得关注，建议进行睡眠呼吸筛查。整体睡眠质量中等偏上，通过改善睡眠环境和习惯，有望提升到85分以上。"
+            </div>
+        </div>
+        
+        <div class="footer">
+            数据更新时间: 2025-07-15 18:18:41 · 由睡眠专家系统生成
+        </div>
+    </div>
+</body>
+</html>
