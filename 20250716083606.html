@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #15202b;
+            color: #e7e9ea;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #8899a6;
+        }
+        .tweet {
+            background-color: #192734;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1da1f2;
+            margin-bottom: 10px;
+        }
+        .chart {
+            display: flex;
+            height: 30px;
+            background-color: #253341;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .core { background-color: #1da1f2; }
+        .deep { background-color: #17bf63; }
+        .rem { background-color: #794bc4; }
+        .awake { background-color: #f45d22; }
+        .legend {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin: 15px 0 10px 0;
+        }
+        .problem, .suggestion {
+            padding-left: 15px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+        .problem:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+        }
+        .suggestion:before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+        .expert {
+            font-style: italic;
+            color: #8899a6;
+            border-left: 3px solid #1da1f2;
+            padding-left: 10px;
+            margin-top: 15px;
+        }
+        .timestamp {
+            color: #8899a6;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+        .divider {
+            border-top: 1px solid #38444d;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">ZZ</div>
+        <div>
+            <div class="username">睡眠质量评估</div>
+            <div class="handle">@SleepExpert · 7月16日</div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="score">睡眠评分: 78/100</div>
+        <p>昨晚你的睡眠总时长为7小时22分钟，让我们看看详细分析 ↓</p>
+        
+        <div class="chart">
+            <div class="core" style="width: 60.5%"></div>
+            <div class="deep" style="width: 12.4%"></div>
+            <div class="rem" style="width: 25.1%"></div>
+            <div class="awake" style="width: 1.8%"></div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item"><span class="legend-color core"></span>核心睡眠 60.5%</div>
+            <div class="legend-item"><span class="legend-color deep"></span>深度睡眠 12.4%</div>
+            <div class="legend-item"><span class="legend-color rem"></span>REM睡眠 25.1%</div>
+            <div class="legend-item"><span class="legend-color awake"></span>清醒 1.8%</div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">潜在问题</div>
+        <div class="problem">深度睡眠比例偏低(12.4%)，低于理想范围(15-25%)</div>
+        <div class="problem">睡眠周期碎片化，有多次短暂清醒</div>
+        <div class="problem">凌晨3点后睡眠质量下降，REM睡眠占比增加</div>
+        
+        <div class="divider"></div>
+        
+        <div class="section-title">改善建议</div>
+        <div class="suggestion">睡前1小时避免使用电子设备，蓝光会抑制褪黑素分泌</div>
+        <div class="suggestion">尝试在睡前进行10分钟冥想或深呼吸练习</div>
+        <div class="suggestion">保持卧室温度在18-22°C之间，创造更舒适的睡眠环境</div>
+        <div class="suggestion">考虑调整晚餐时间，避免睡前3小时内进食</div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">专家锐评</div>
+        <div class="expert">
+            "你的睡眠结构显示出典型的现代都市人模式 - 核心睡眠充足但深度睡眠不足。血氧水平良好(平均96%)，但心率变异性数据显示你在凌晨时段压力反应明显。建议关注睡前放松，特别是凌晨3点左右的睡眠中断可能是压力或环境因素导致。"
+        </div>
+        
+        <div class="timestamp">上午8:36 · 2025年7月16日</div>
+    </div>
+</body>
+</html>
