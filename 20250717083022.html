@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background-color: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .user-info {
+            flex: 1;
+        }
+        .username {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .handle {
+            color: #536471;
+            font-size: 14px;
+        }
+        .content {
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .stat-item {
+            text-align: center;
+            flex: 1;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1da1f2;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #536471;
+        }
+        .sleep-stages {
+            display: flex;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+        .stage-core {
+            background-color: #1da1f2;
+            width: 62%;
+        }
+        .stage-deep {
+            background-color: #17bf63;
+            width: 10%;
+        }
+        .stage-rem {
+            background-color: #794bc4;
+            width: 26%;
+        }
+        .stage-awake {
+            background-color: #e0245e;
+            width: 2%;
+        }
+        .legend {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            font-size: 12px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            margin-right: 4px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin: 16px 0 8px 0;
+        }
+        .problem-list, .suggestion-list {
+            padding-left: 20px;
+        }
+        .problem-list li, .suggestion-list li {
+            margin-bottom: 8px;
+        }
+        .expert-comment {
+            background-color: #f7f9fa;
+            border-left: 4px solid #1da1f2;
+            padding: 12px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 16px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <div class="header">
+            <div class="avatar">Z</div>
+            <div class="user-info">
+                <div class="username">睡眠质量评估专家</div>
+                <div class="handle">@SleepQualityExpert</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            您的睡眠质量评估日报已生成！以下是2025年7月17日的详细分析：
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value">76</div>
+                <div class="stat-label">睡眠分数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">6h16m</div>
+                <div class="stat-label">总睡眠时间</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">98%</div>
+                <div class="stat-label">血氧水平</div>
+            </div>
+        </div>
+        
+        <div class="sleep-stages">
+            <div class="stage-core"></div>
+            <div class="stage-deep"></div>
+            <div class="stage-rem"></div>
+            <div class="stage-awake"></div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #1da1f2;"></div>
+                <span>核心睡眠 62%</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #17bf63;"></div>
+                <span>深度睡眠 10%</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #794bc4;"></div>
+                <span>REM 26%</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e0245e;"></div>
+                <span>清醒 2%</span>
+            </div>
+        </div>
+        
+        <div class="section-title">潜在问题：</div>
+        <ul class="problem-list">
+            <li>深度睡眠时间不足(仅38分钟)，低于推荐值(90-120分钟)</li>
+            <li>凌晨3:05出现血氧下降至82%，可能存在呼吸暂停风险</li>
+            <li>REM睡眠占比偏高(26%)，可能影响睡眠质量</li>
+        </ul>
+        
+        <div class="section-title">改善建议：</div>
+        <ul class="suggestion-list">
+            <li>睡前避免酒精和咖啡因摄入，有助于增加深度睡眠</li>
+            <li>尝试侧卧睡姿，可能改善血氧水平</li>
+            <li>保持规律的睡眠时间表，帮助调节睡眠周期</li>
+            <li>考虑进行睡眠呼吸暂停筛查</li>
+        </ul>
+        
+        <div class="expert-comment">
+            "您的睡眠结构显示REM睡眠比例较高，这可能与近期压力水平有关。虽然总睡眠时间充足，但深度睡眠不足会影响身体恢复。建议关注血氧波动情况，必要时咨询专业医生。"
+        </div>
+        
+        <div class="timestamp">2025年7月17日 上午8:30</div>
+    </div>
+</body>
+</html>
