@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .container {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+            color: #1da1f2;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sleep-stage {
+            display: flex;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .stage-name {
+            width: 100px;
+        }
+        .stage-bar {
+            flex-grow: 1;
+            height: 20px;
+            background-color: #e1e8ed;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        .stage-fill {
+            height: 100%;
+            border-radius: 10px;
+        }
+        .stage-percent {
+            width: 50px;
+            text-align: right;
+        }
+        .problem, .suggestion {
+            background-color: #f7f9fc;
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .problem-title, .suggestion-title {
+            font-weight: bold;
+            color: #e0245e;
+            margin-bottom: 5px;
+        }
+        .suggestion-title {
+            color: #17bf63;
+        }
+        .expert {
+            font-style: italic;
+            border-left: 3px solid #1da1f2;
+            padding-left: 10px;
+            color: #536471;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #536471;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">Z</div>
+            <div>
+                <div class="title">睡眠质量日报</div>
+                <div class="date">2025年7月29日</div>
+            </div>
+        </div>
+
+        <div class="score">
+            数据不足
+        </div>
+
+        <div class="section">
+            <div class="section-title">睡眠阶段分析</div>
+            <p>未能获取有效睡眠数据</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">潜在问题</div>
+            <div class="problem">
+                <div class="problem-title">⚠️ 数据缺失</div>
+                <p>系统未检测到有效的睡眠监测数据，无法进行准确分析。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">改善建议</div>
+            <div class="suggestion">
+                <div class="suggestion-title">💡 检查设备</div>
+                <p>1. 请确保您的睡眠监测设备已正确佩戴并开启</p>
+                <p>2. 检查设备电量是否充足</p>
+                <p>3. 确认设备与手机的连接正常</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">专家锐评</div>
+            <div class="expert">
+                "没有数据就像在黑暗中摸索 - 建议先确保监测设备正常工作，明天再获取一份完整的睡眠报告。记住，了解问题是改善的第一步。"
+            </div>
+        </div>
+
+        <div class="footer">
+            每日睡眠报告 · 健康生活从优质睡眠开始
+        </div>
+    </div>
+</body>
+</html>
