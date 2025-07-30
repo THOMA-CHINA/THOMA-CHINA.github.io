@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .sleep-report {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1d9bf0;
+        }
+        .sleep-stages {
+            margin-bottom: 20px;
+        }
+        .stage {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .stage-name {
+            font-weight: bold;
+        }
+        .section-title {
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            color: #1d9bf0;
+        }
+        .problems, .recommendations, .expert-comment {
+            background-color: #f7f9fa;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .expert-comment {
+            border-left: 4px solid #1d9bf0;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sleep-report">
+        <div class="header">
+            <h1>睡眠质量日报</h1>
+            <div class="score">--</div>
+        </div>
+        
+        <div class="sleep-stages">
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="stage">
+                <span class="stage-name">深睡</span>
+                <span>-- (--%)</span>
+            </div>
+            <div class="stage">
+                <span class="stage-name">浅睡</span>
+                <span>-- (--%)</span>
+            </div>
+            <div class="stage">
+                <span class="stage-name">REM</span>
+                <span>-- (--%)</span>
+            </div>
+            <div class="stage">
+                <span class="stage-name">清醒</span>
+                <span>-- (--%)</span>
+            </div>
+        </div>
+        
+        <div class="problems">
+            <div class="section-title">⚠️ 潜在问题</div>
+            <p>未检测到有效睡眠数据</p>
+        </div>
+        
+        <div class="recommendations">
+            <div class="section-title">💡 改善建议</div>
+            <p>1. 请确保正确佩戴睡眠监测设备</p>
+            <p>2. 检查设备连接是否正常</p>
+            <p>3. 确保设备有足够电量</p>
+        </div>
+        
+        <div class="expert-comment">
+            <div class="section-title">🔍 专家锐评</div>
+            <p>"看起来你的睡眠监测设备可能没有正常工作，或者你昨晚根本没睡觉？无论是哪种情况，我们都需要可靠的数据才能给出准确的评估。"</p>
+        </div>
+        
+        <div class="timestamp">2025-07-30 08:00:05</div>
+    </div>
+</body>
+</html>
