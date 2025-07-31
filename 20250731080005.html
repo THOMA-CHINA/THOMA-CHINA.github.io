@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .handle {
+            color: #536471;
+            font-size: 14px;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .tweet-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #1da1f2;
+        }
+        .score {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1da1f2;
+            margin: 10px 0;
+        }
+        .sleep-stage {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .stage-name {
+            font-weight: bold;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #e1e8ed;
+            border-radius: 10px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #1da1f2;
+            border-radius: 10px;
+        }
+        .problem, .advice, .comment {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e1e8ed;
+        }
+        .problem-title, .advice-title, .comment-title {
+            font-weight: bold;
+            color: #1da1f2;
+            margin-bottom: 5px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">Z</div>
+        <div>
+            <div class="username">睡眠质量评估专家</div>
+            <div class="handle">@SleepQualityExpert</div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-title">今日睡眠质量评估</div>
+        <div class="score">65/100</div>
+        
+        <div>睡眠阶段分析</div>
+        <div class="sleep-stage">
+            <span class="stage-name">深睡</span>
+            <span>1小时15分 (25%)</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 25%;"></div>
+        </div>
+        
+        <div class="sleep-stage">
+            <span class="stage-name">浅睡</span>
+            <span>3小时 (50%)</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+        </div>
+        
+        <div class="sleep-stage">
+            <span class="stage-name">REM</span>
+            <span>45分钟 (12.5%)</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 12.5%;"></div>
+        </div>
+        
+        <div class="sleep-stage">
+            <span class="stage-name">清醒</span>
+            <span>1小时 (12.5%)</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 12.5%;"></div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="problem-title">潜在问题</div>
+        <p>1. 深睡时间不足，仅占总睡眠时间的25%</p>
+        <p>2. 心率变异性较低(约20ms)，表明压力水平较高</p>
+        <p>3. 夜间清醒时间占比过高(12.5%)</p>
+    </div>
+
+    <div class="tweet">
+        <div class="advice-title">改善建议</div>
+        <p>1. 睡前1小时避免使用电子设备，蓝光会抑制褪黑素分泌</p>
+        <p>2. 尝试4-7-8呼吸法(吸气4秒，屏息7秒，呼气8秒)帮助入睡</p>
+        <p>3. 保持卧室温度在18-22°C之间，这是最佳睡眠温度</p>
+        <p>4. 考虑进行轻度有氧运动，如散步，帮助提高心率变异性</p>
+    </div>
+
+    <div class="tweet">
+        <div class="comment-title">专家锐评</div>
+        <p>"你的睡眠就像一部没有高潮的电影 - 浅睡太多，深睡太少。心率变异性显示你可能是带着压力入睡的。建议把睡前刷手机换成读本无聊的书，让大脑知道现在是关机时间，不是待机模式。"</p>
+    </div>
+
+    <div class="timestamp">2025年7月31日 上午8:00 · Twitter Web App</div>
+</body>
+</html>
