@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background-color: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #536471;
+            margin-left: 4px;
+        }
+        .content {
+            margin-bottom: 12px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .stat {
+            text-align: center;
+            flex: 1;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #536471;
+        }
+        .sleep-stage {
+            margin-bottom: 16px;
+        }
+        .progress-container {
+            height: 8px;
+            background-color: #e1e8ed;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 4px;
+        }
+        .deep {
+            background-color: #1da1f2;
+        }
+        .light {
+            background-color: #17bf63;
+        }
+        .rem {
+            background-color: #794bc4;
+        }
+        .awake {
+            background-color: #e0245e;
+        }
+        .footer {
+            color: #536471;
+            font-size: 14px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .warning {
+            color: #e0245e;
+            font-weight: bold;
+        }
+        .recommendation {
+            background-color: #e8f5fe;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+        .expert {
+            font-style: italic;
+            margin-top: 12px;
+            border-left: 4px solid #1da1f2;
+            padding-left: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <div class="header">
+            <div class="avatar">ZS</div>
+            <div>
+                <span class="username">睡眠质量评估</span>
+                <span class="handle">@SleepExpert · 8月5日</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            您的2025年8月5日睡眠质量评估报告已生成：
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">--</div>
+                <div class="stat-label">睡眠分数</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">--</div>
+                <div class="stat-label">总睡眠时间</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">40.9ms</div>
+                <div class="stat-label">HRV</div>
+            </div>
+        </div>
+        
+        <div class="sleep-stage">
+            <div>深睡: -- (--%)</div>
+            <div class="progress-container">
+                <div class="progress-bar deep" style="width: 0%"></div>
+            </div>
+        </div>
+        
+        <div class="sleep-stage">
+            <div>浅睡: -- (--%)</div>
+            <div class="progress-container">
+                <div class="progress-bar light" style="width: 0%"></div>
+            </div>
+        </div>
+        
+        <div class="sleep-stage">
+            <div>REM: -- (--%)</div>
+            <div class="progress-container">
+                <div class="progress-bar rem" style="width: 0%"></div>
+            </div>
+        </div>
+        
+        <div class="sleep-stage">
+            <div>清醒: -- (--%)</div>
+            <div class="progress-container">
+                <div class="progress-bar awake" style="width: 0%"></div>
+            </div>
+        </div>
+        
+        <div class="warning">
+            警告: 检测到睡眠数据不完整，无法进行全面评估
+        </div>
+        
+        <div class="recommendation">
+            <strong>改善建议:</strong><br>
+            1. 确保佩戴睡眠监测设备整晚<br>
+            2. 检查设备连接是否正常<br>
+            3. 保持规律的睡眠时间表
+        </div>
+        
+        <div class="expert">
+            "心率变异性数据显示您的自主神经系统处于中等压力状态。建议在睡前进行放松活动如冥想或深呼吸练习。" — 睡眠专家
+        </div>
+        
+        <div class="timestamp">上午8:00 · 2025年8月5日</div>
+    </div>
+</body>
+</html>
