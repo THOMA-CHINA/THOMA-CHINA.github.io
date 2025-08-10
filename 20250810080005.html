@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #15202b;
+            color: #e7e9ea;
+        }
+        .container {
+            background-color: #192734;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .subtitle {
+            color: #8899a6;
+            font-size: 14px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+            color: #1da1f2;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sleep-stage {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #38444d;
+        }
+        .stage-name {
+            font-weight: bold;
+        }
+        .stage-value {
+            color: #8899a6;
+        }
+        .problem, .suggestion {
+            background-color: #253341;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .problem-title, .suggestion-title {
+            font-weight: bold;
+            color: #e0245e;
+            margin-bottom: 8px;
+        }
+        .suggestion-title {
+            color: #17bf63;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #8899a6;
+            border-left: 4px solid #1da1f2;
+            padding-left: 12px;
+            margin-top: 20px;
+        }
+        .footer {
+            color: #8899a6;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">ZZ</div>
+            <div>
+                <div class="title">睡眠质量评估日报</div>
+                <div class="subtitle">2025年8月10日 · 由睡眠专家生成</div>
+            </div>
+        </div>
+
+        <div class="score">--</div>
+
+        <div class="section">
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="sleep-stage">
+                <span class="stage-name">深睡</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">浅睡</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">REM</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">清醒</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+        </div>
+
+        <div class="problem">
+            <div class="problem-title">⚠️ 潜在问题</div>
+            <div>无法获取完整的睡眠数据，无法进行准确评估</div>
+        </div>
+
+        <div class="suggestion">
+            <div class="suggestion-title">💡 改善建议</div>
+            <div>1. 确保睡眠监测设备正确佩戴并正常工作</div>
+            <div>2. 检查设备连接和数据同步情况</div>
+            <div>3. 尝试重新记录一晚的睡眠数据</div>
+        </div>
+
+        <div class="expert-comment">
+            "没有数据就无法评估，就像没有咖啡因的早晨一样令人困惑。请确保您的设备正常工作，我们才能提供有价值的分析。"
+        </div>
+
+        <div class="footer">
+            此报告由AI睡眠专家生成 · 仅供参考 · 如有医疗问题请咨询专业医生
+        </div>
+    </div>
+</body>
+</html>
