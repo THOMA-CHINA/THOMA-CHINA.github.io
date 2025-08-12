@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background-color: #1da1f2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .user-info {
+            flex: 1;
+        }
+        .username {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .handle {
+            color: #536471;
+            font-size: 14px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+        }
+        .content {
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+        .stat-item {
+            text-align: center;
+            flex: 1;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1da1f2;
+        }
+        .sleep-stages {
+            background-color: #f7f9fa;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+        .stage-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .stage-bar {
+            height: 20px;
+            background-color: #1da1f2;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+        .issues, .recommendations, .expert-comment {
+            background-color: #f7f9fa;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1da1f2;
+        }
+        .footer {
+            color: #536471;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <div class="header">
+            <div class="avatar">Z</div>
+            <div class="user-info">
+                <div class="username">睡眠质量评估专家</div>
+                <div class="handle">@SleepQualityExpert</div>
+            </div>
+            <div class="timestamp">2025-08-12</div>
+        </div>
+        
+        <div class="content">
+            您的睡眠质量日报已生成！以下是2025年8月11日的详细分析结果：
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value">--</div>
+                <div>睡眠分数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">--</div>
+                <div>总睡眠时间</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">--</div>
+                <div>入睡时间</div>
+            </div>
+        </div>
+        
+        <div class="sleep-stages">
+            <div class="section-title">各阶段睡眠分析</div>
+            <p>⚠️ 未检测到有效的睡眠阶段数据</p>
+        </div>
+        
+        <div class="issues">
+            <div class="section-title">潜在问题</div>
+            <ul>
+                <li>睡眠数据不完整，无法进行全面评估</li>
+                <li>血氧水平波动较大（96%-100%）</li>
+                <li>心率变异性数据不足</li>
+            </ul>
+        </div>
+        
+        <div class="recommendations">
+            <div class="section-title">改善建议</div>
+            <ul>
+                <li>确保佩戴睡眠监测设备一整晚</li>
+                <li>保持睡前2小时避免剧烈运动</li>
+                <li>维持规律的睡眠时间表</li>
+                <li>睡前避免摄入咖啡因和酒精</li>
+            </ul>
+        </div>
+        
+        <div class="expert-comment">
+            <div class="section-title">专家锐评</div>
+            <p>"数据不足导致评估受限，但血氧波动值得关注。建议完善监测设备使用方式后重新评估。"</p>
+        </div>
+        
+        <div class="footer">
+            #睡眠质量 #健康生活 #睡眠监测
+        </div>
+    </div>
+</body>
+</html>
