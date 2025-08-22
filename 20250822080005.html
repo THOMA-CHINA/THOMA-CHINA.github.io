@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1da1f2;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stage-value {
+            color: #1da1f2;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .problem, .suggestion {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #1da1f2;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #536471;
+            margin-top: 20px;
+        }
+        .footer {
+            color: #536471;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">Z</div>
+        <div>
+            <div class="title">睡眠质量评估日报</div>
+            <div class="date">2025年8月22日</div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="score">78</div>
+        <div class="sleep-stages">
+            <div class="stage">
+                <div class="stage-name">深睡</div>
+                <div class="stage-value">1.8h (22%)</div>
+            </div>
+            <div class="stage">
+                <div class="stage-name">浅睡</div>
+                <div class="stage-value">4.2h (52%)</div>
+            </div>
+            <div class="stage">
+                <div class="stage-name">REM</div>
+                <div class="stage-value">1.2h (15%)</div>
+            </div>
+            <div class="stage">
+                <div class="stage-name">清醒</div>
+                <div class="stage-value">0.8h (10%)</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="section-title">潜在问题</div>
+        <div class="problem">1. 深睡时间不足：仅占22%，低于理想范围(25-30%)</div>
+        <div class="problem">2. 夜间血氧波动：凌晨3点左右出现血氧下降至92-93%</div>
+        <div class="problem">3. 心率变异性较低：平均HRV约43ms，显示恢复不足</div>
+    </div>
+    
+    <div class="card">
+        <div class="section-title">改善建议</div>
+        <div class="suggestion">1. 睡前2小时避免蓝光暴露，提升褪黑素分泌</div>
+        <div class="suggestion">2. 尝试侧卧睡姿，可能改善血氧水平</div>
+        <div class="suggestion">3. 下午增加20分钟日光浴，调节昼夜节律</div>
+        <div class="suggestion">4. 晚餐减少高GI碳水化合物摄入</div>
+    </div>
+    
+    <div class="card">
+        <div class="section-title">专家锐评</div>
+        <div class="expert-comment">
+            "你的睡眠结构像一杯没冲开的速溶咖啡 - 有料但没完全释放潜力。血氧波动提示可能存在轻度呼吸干扰，虽然78分不算差，但就像考试得了78分却知道能考90分一样，还有提升空间。建议先从睡眠环境温度(20-22°C最佳)和睡前放松入手。"
+        </div>
+    </div>
+    
+    <div class="footer">
+        数据来源: 可穿戴设备监测 · 由睡眠专家系统生成
+    </div>
+</body>
+</html>
