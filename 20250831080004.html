@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background-color: #1da1f2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .user-info {
+            flex: 1;
+        }
+        .username {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .handle {
+            color: #536471;
+            font-size: 14px;
+        }
+        .content {
+            line-height: 1.5;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1da1f2;
+        }
+        .score {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1da1f2;
+            margin: 10px 0;
+        }
+        .sleep-stage {
+            display: flex;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .stage-name {
+            width: 100px;
+            font-weight: bold;
+        }
+        .stage-bar {
+            flex: 1;
+            height: 20px;
+            background-color: #e1e8ed;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        .stage-fill {
+            height: 100%;
+            background-color: #1da1f2;
+            border-radius: 10px;
+        }
+        .stage-percent {
+            width: 50px;
+            text-align: right;
+        }
+        .problem {
+            color: #e0245e;
+            font-weight: bold;
+        }
+        .suggestion {
+            background-color: #e8f5fd;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #536471;
+            border-left: 3px solid #1da1f2;
+            padding-left: 10px;
+            margin-top: 15px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <div class="header">
+            <div class="avatar">Z</div>
+            <div class="user-info">
+                <div class="username">睡眠质量评估专家</div>
+                <div class="handle">@SleepQualityExpert</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <div class="section-title">你的睡眠质量日报</div>
+                <div class="score">72/100</div>
+                <div>中等质量的睡眠，但还有提升空间</div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">睡眠阶段分析</div>
+                <div class="sleep-stage">
+                    <div class="stage-name">深睡眠</div>
+                    <div class="stage-bar"><div class="stage-fill" style="width: 20%"></div></div>
+                    <div class="stage-percent">20%</div>
+                </div>
+                <div class="sleep-stage">
+                    <div class="stage-name">浅睡眠</div>
+                    <div class="stage-bar"><div class="stage-fill" style="width: 50%"></div></div>
+                    <div class="stage-percent">50%</div>
+                </div>
+                <div class="sleep-stage">
+                    <div class="stage-name">REM睡眠</div>
+                    <div class="stage-bar"><div class="stage-fill" style="width: 20%"></div></div>
+                    <div class="stage-percent">20%</div>
+                </div>
+                <div class="sleep-stage">
+                    <div class="stage-name">清醒时间</div>
+                    <div class="stage-bar"><div class="stage-fill" style="width: 10%"></div></div>
+                    <div class="stage-percent">10%</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">潜在问题</div>
+                <div class="problem">• 深睡眠时间不足</div>
+                <div class="problem">• 心率变异性较低 (29.882 ms)</div>
+                <div class="problem">• 血氧水平波动 (95%)</div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">改善建议</div>
+                <div class="suggestion">
+                    1. 睡前1小时避免使用电子设备<br>
+                    2. 保持卧室温度在18-22°C之间<br>
+                    3. 尝试4-7-8呼吸法帮助入睡<br>
+                    4. 考虑增加白天的体育活动
+                </div>
+            </div>
+            
+            <div class="expert-comment">
+                "你的睡眠结构显示恢复性睡眠不足，特别是深睡眠阶段。这可能与日间压力或睡前活动有关。建议建立更规律的睡眠时间表，并注意放松技巧的练习。"
+            </div>
+            
+            <div class="timestamp">2025年8月31日 上午8:00</div>
+        </div>
+    </div>
+</body>
+</html>
