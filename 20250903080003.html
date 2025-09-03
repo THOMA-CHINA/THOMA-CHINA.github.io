@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #536471;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1da1f2;
+            margin-bottom: 8px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin: 12px 0 8px 0;
+            color: #0f1419;
+        }
+        .sleep-stage {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+        .stage-name {
+            font-weight: 500;
+        }
+        .stage-value {
+            color: #536471;
+        }
+        .problem, .suggestion {
+            padding-left: 12px;
+            border-left: 3px solid #1da1f2;
+            margin: 12px 0;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #536471;
+            margin-top: 16px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            color: #536471;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">ZZ</div>
+        <div>
+            <div class="username">睡眠质量评估专家</div>
+            <div class="handle">@SleepQualityExpert</div>
+        </div>
+    </div>
+
+    <div class="timestamp">2025-09-03 08:00:03</div>
+
+    <div class="tweet">
+        <div class="score">睡眠评分: 数据不足</div>
+        <div>由于缺乏核心睡眠阶段数据，无法计算完整睡眠评分</div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">睡眠阶段分析</div>
+        <div>⚠️ 未检测到有效睡眠阶段数据</div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">其他健康指标</div>
+        <div class="sleep-stage">
+            <span class="stage-name">血氧水平</span>
+            <span class="stage-value">95% (正常)</span>
+        </div>
+        <div class="sleep-stage">
+            <span class="stage-name">心率变异性</span>
+            <span class="stage-value">21.48-24.51 ms (波动较大)</span>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">潜在问题</div>
+        <div class="problem">
+            • 缺乏核心睡眠数据，无法全面评估睡眠质量<br>
+            • 心率变异性波动较大，可能反映压力或睡眠不安<br>
+            • 无法确认实际睡眠时长和睡眠效率
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">改善建议</div>
+        <div class="suggestion">
+            • 确保睡眠监测设备正常工作并正确佩戴<br>
+            • 睡前1小时避免使用电子设备<br>
+            • 尝试冥想或深呼吸练习来稳定心率<br>
+            • 保持规律的睡眠时间表
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">专家锐评</div>
+        <div class="expert-comment">
+            "数据就像黑暗中的手电筒 - 目前我们只有微弱的光线。完整的睡眠数据才能照亮你的睡眠质量全貌。建议检查设备连接，明天再战！"
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>💬 12</span>
+        <span>🔄 5</span>
+        <span>❤️ 28</span>
+        <span>📊 分享</span>
+    </div>
+</body>
+</html>
