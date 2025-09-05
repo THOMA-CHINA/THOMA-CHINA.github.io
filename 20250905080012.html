@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Quality Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #15202b;
+            color: #e7e9ea;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #8b98a5;
+        }
+        .content {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1da1f2;
+            margin: 10px 0;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+        .stage {
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #1e2732;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .stage-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .issues, .recommendations, .expert-comment {
+            background-color: #1e2732;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1da1f2;
+        }
+        .footer {
+            color: #8b98a5;
+            font-size: 14px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .interaction {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            color: #8b98a5;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">ZZ</div>
+        <div>
+            <div class="username">Zzz Expert</div>
+            <div class="handle">@SleepDoctor</div>
+        </div>
+    </div>
+
+    <div class="content">
+        Your sleep report for 2025-09-05 is here! Let's dive in:
+    </div>
+
+    <div class="score">
+        Sleep Score: <span style="color: #e0245e">N/A</span>
+    </div>
+
+    <div class="sleep-stages">
+        <div class="stage">
+            <div class="stage-title">Deep</div>
+            <div>N/A</div>
+            <div>0%</div>
+        </div>
+        <div class="stage">
+            <div class="stage-title">Light</div>
+            <div>N/A</div>
+            <div>0%</div>
+        </div>
+        <div class="stage">
+            <div class="stage-title">REM</div>
+            <div>N/A</div>
+            <div>0%</div>
+        </div>
+        <div class="stage">
+            <div class="stage-title">Awake</div>
+            <div>N/A</div>
+            <div>0%</div>
+        </div>
+    </div>
+
+    <div class="issues">
+        <div class="section-title">⚠️ Potential Issues</div>
+        <ul>
+            <li>No sleep stage data available for analysis</li>
+            <li>Limited HRV data points (3 readings total)</li>
+            <li>Missing core sleep metrics (duration, efficiency)</li>
+        </ul>
+    </div>
+
+    <div class="recommendations">
+        <div class="section-title">💡 Improvement Suggestions</div>
+        <ul>
+            <li>Ensure your sleep tracking device is properly worn and synced</li>
+            <li>Try to collect more consistent HRV readings throughout the day</li>
+            <li>Maintain a regular sleep schedule to improve data consistency</li>
+            <li>Check device battery and connectivity before bedtime</li>
+        </ul>
+    </div>
+
+    <div class="expert-comment">
+        <div class="section-title">🔍 Expert Analysis</div>
+        <p>The limited data available suggests we're missing critical sleep metrics. Your blood oxygen level at 97% is normal, and the HRV readings show moderate variability (26-47ms), but without sleep duration or quality metrics, we can't assess your sleep health properly.</p>
+        <p>This appears to be a data collection issue rather than a sleep quality issue. Let's focus on getting complete data for the next assessment!</p>
+    </div>
+
+    <div class="interaction">
+        <div>💬 24</div>
+        <div>🔁 8</div>
+        <div>❤️ 42</div>
+        <div>📊 3</div>
+    </div>
+
+    <div class="footer">
+        <div>8:00 AM · Sep 5, 2025</div>
+        <div>🌐 · SleepTracker v3.2</div>
+    </div>
+</body>
+</html>
