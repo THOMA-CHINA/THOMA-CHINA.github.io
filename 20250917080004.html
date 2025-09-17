@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .tweet-container {
+            background-color: white;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+        .user-info {
+            flex: 1;
+        }
+        .username {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .handle {
+            color: #536471;
+            font-size: 14px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .content {
+            line-height: 1.5;
+        }
+        .score {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 16px 0;
+            text-align: center;
+        }
+        .good {
+            color: #17bf63;
+        }
+        .fair {
+            color: #ffad1f;
+        }
+        .poor {
+            color: #e0245e;
+        }
+        .sleep-stages {
+            display: flex;
+            margin: 16px 0;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .stage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .stage-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        .stage-item {
+            text-align: center;
+        }
+        .stage-label {
+            font-weight: bold;
+        }
+        .section-title {
+            font-weight: bold;
+            margin: 16px 0 8px 0;
+        }
+        .problems, .recommendations, .expert-comment {
+            background-color: #f7f9fc;
+            padding: 12px;
+            border-radius: 12px;
+            margin: 12px 0;
+        }
+        .expert-comment {
+            border-left: 4px solid #1da1f2;
+        }
+        .divider {
+            height: 1px;
+            background-color: #eff3f4;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-container">
+        <div class="header">
+            <div class="avatar">ZZ</div>
+            <div class="user-info">
+                <div class="username">睡眠质量评估专家</div>
+                <div class="handle">@SleepQualityExpert</div>
+            </div>
+        </div>
+        
+        <div class="timestamp">2025年9月17日 · 08:00</div>
+        
+        <div class="content">
+            <p>早上好！这是您昨晚的睡眠质量评估报告：</p>
+            
+            <div class="score poor">42/100</div>
+            
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="sleep-stages">
+                <div class="stage" style="background-color: #1da1f2; width: 15%">清醒</div>
+                <div class="stage" style="background-color: #794bc4; width: 30%">浅睡</div>
+                <div class="stage" style="background-color: #17bf63; width: 40%">深睡</div>
+                <div class="stage" style="background-color: #e0245e; width: 15%">REM</div>
+            </div>
+            <div class="stage-details">
+                <div class="stage-item">
+                    <div class="stage-label">清醒</div>
+                    <div>1.2小时 (15%)</div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-label">浅睡</div>
+                    <div>2.4小时 (30%)</div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-label">深睡</div>
+                    <div>3.2小时 (40%)</div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-label">REM</div>
+                    <div>1.2小时 (15%)</div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="section-title">潜在问题</div>
+            <div class="problems">
+                <ul>
+                    <li>入睡时间过长，清醒阶段占比偏高</li>
+                    <li>REM睡眠时间不足，影响记忆巩固</li>
+                    <li>睡眠期间心率变异性较低，表明恢复不足</li>
+                    <li>后半夜出现多次短暂觉醒</li>
+                </ul>
+            </div>
+            
+            <div class="section-title">改善建议</div>
+            <div class="recommendations">
+                <ul>
+                    <li>睡前1小时避免使用电子设备</li>
+                    <li>保持卧室温度在18-22℃之间</li>
+                    <li>尝试睡前进行10分钟冥想或深呼吸练习</li>
+                    <li>考虑调整晚餐时间，避免睡前3小时内进食</li>
+                    <li>白天增加适量有氧运动</li>
+                </ul>
+            </div>
+            
+            <div class="section-title">专家锐评</div>
+            <div class="expert-comment">
+                <p>"您的睡眠结构失衡明显，深睡时间虽充足但REM严重不足，这可能是压力水平升高的信号。建议优先建立规律的睡眠时间表，并考虑进行压力管理训练。连续3天这样的睡眠模式可能会影响白天的认知功能。"</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
