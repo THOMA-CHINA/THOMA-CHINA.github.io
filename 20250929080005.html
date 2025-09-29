@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .container {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            color: #1da1f2;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eff3f4;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sleep-stage {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .stage-name {
+            font-weight: bold;
+        }
+        .stage-value {
+            color: #536471;
+        }
+        .problem, .suggestion {
+            background-color: #f7f9fc;
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .problem-title, .suggestion-title {
+            font-weight: bold;
+            color: #e0245e;
+            margin-bottom: 5px;
+        }
+        .suggestion-title {
+            color: #17bf63;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #536471;
+            padding: 12px;
+            background-color: #f7f9fc;
+            border-radius: 12px;
+        }
+        .footer {
+            text-align: right;
+            color: #536471;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">ZZ</div>
+            <div>
+                <div class="title">睡眠质量评估日报</div>
+                <div class="date">2025年9月29日</div>
+            </div>
+        </div>
+        
+        <div class="score">78</div>
+        
+        <div class="section">
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="sleep-stage">
+                <span class="stage-name">深睡</span>
+                <span class="stage-value">1小时42分 (21%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">浅睡</span>
+                <span class="stage-value">3小时15分 (40%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">REM</span>
+                <span class="stage-value">1小时30分 (19%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">清醒</span>
+                <span class="stage-value">1小时33分 (20%)</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">潜在问题</div>
+            <div class="problem">
+                <div class="problem-title">夜间血氧波动</div>
+                <div>您的血氧水平在凌晨00:13降至94%，低于正常范围(95-100%)</div>
+            </div>
+            <div class="problem">
+                <div class="problem-title">心率变异性异常</div>
+                <div>入睡前HRV波动较大(12.5ms到40.6ms)，可能反映压力或疲劳状态</div>
+            </div>
+            <div class="problem">
+                <div class="problem-title">清醒时间过长</div>
+                <div>夜间清醒时间占比达20%，高于理想值(15%以下)</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">改善建议</div>
+            <div class="suggestion">
+                <div class="suggestion-title">调整睡姿</div>
+                <div>尝试侧卧睡姿，使用枕头支撑颈部，有助于改善夜间血氧水平</div>
+            </div>
+            <div class="suggestion">
+                <div class="suggestion-title">睡前放松</div>
+                <div>睡前1小时进行10分钟深呼吸练习，稳定心率变异性</div>
+            </div>
+            <div class="suggestion">
+                <div class="suggestion-title">控制咖啡因</div>
+                <div>下午3点后避免摄入咖啡因，减少夜间清醒时间</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">专家锐评</div>
+            <div class="expert-comment">
+                "您的睡眠结构基本合理，但血氧波动和HRV异常值得关注。建议进行一周的睡眠日记记录，追踪这些异常是否与特定活动或饮食相关。如果血氧持续低于95%，建议咨询呼吸科医生。"
+            </div>
+        </div>
+        
+        <div class="footer">
+            数据来源: 您的健康监测设备 · 分析时间: 2025-09-29 08:00
+        </div>
+    </div>
+</body>
+</html>
