@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .container {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #536471;
+            margin-left: 5px;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+            margin-top: 2px;
+        }
+        .content {
+            line-height: 1.5;
+        }
+        .score {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #1da1f2;
+        }
+        .sleep-stages {
+            margin: 15px 0;
+        }
+        .stage {
+            display: flex;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .stage-name {
+            width: 100px;
+        }
+        .stage-bar {
+            flex-grow: 1;
+            height: 20px;
+            background-color: #e1e8ed;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        .stage-fill {
+            height: 100%;
+            border-radius: 10px;
+        }
+        .stage-percent {
+            width: 50px;
+            text-align: right;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .issues-list, .recommendations-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .issues-list li, .recommendations-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e1e8ed;
+        }
+        .expert-comment {
+            background-color: #f7f9fc;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #536471;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .interaction {
+            display: flex;
+            align-items: center;
+            color: #536471;
+        }
+        .interaction svg {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">ZS</div>
+            <div>
+                <div>
+                    <span class="username">睡眠质量评估专家</span>
+                    <span class="handle">@SleepQualityPro</span>
+                </div>
+                <div class="date">2025年10月4日</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <p>早上好！这是您昨晚的睡眠质量评估报告：</p>
+            
+            <div class="score">睡眠分数: 无法评估</div>
+            
+            <div class="sleep-stages">
+                <div class="section-title">睡眠阶段分析</div>
+                <p>⚠️ 未检测到有效的睡眠数据</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">潜在问题</div>
+                <ul class="issues-list">
+                    <li>未检测到任何睡眠记录数据</li>
+                    <li>无法评估睡眠质量</li>
+                    <li>可能设备未正确佩戴或未开启睡眠监测</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">改善建议</div>
+                <ul class="recommendations-list">
+                    <li>检查您的睡眠监测设备是否正常工作</li>
+                    <li>确保设备在睡前正确佩戴</li>
+                    <li>尝试重新同步设备数据</li>
+                    <li>如果问题持续，考虑联系设备技术支持</li>
+                </ul>
+            </div>
+            
+            <div class="expert-comment">
+                <div class="section-title">专家锐评</div>
+                <p>"没有数据就无法评估，就像没有食材就做不了菜。建议先解决数据收集问题，我们才能给出有价值的睡眠分析。"</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="interaction">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+                <span>12</span>
+            </div>
+            <div class="interaction">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>5</span>
+            </div>
+            <div class="interaction">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <path d="M22 6l-10 7L2 6"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
