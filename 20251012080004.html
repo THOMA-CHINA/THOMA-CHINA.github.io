@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .tweet-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1da1f2;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-name {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .stage-value {
+            color: #1da1f2;
+        }
+        .issues, .recommendations, .expert-comment {
+            margin-top: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1da1f2;
+        }
+        .footer {
+            color: #536471;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">ZZ</div>
+        <div>
+            <div class="username">睡眠质量评估专家</div>
+            <div class="date">2025年10月12日</div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-title">昨晚睡眠质量日报</div>
+        
+        <div class="score">--</div>
+        <div style="text-align: center; color: #536471;">数据不足，无法计算睡眠分数</div>
+    </div>
+
+    <div class="tweet">
+        <div class="tweet-title">睡眠阶段分析</div>
+        <div style="text-align: center; color: #536471;">未检测到有效睡眠数据</div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">潜在问题</div>
+        <ul>
+            <li>未检测到睡眠数据，无法评估睡眠质量</li>
+            <li>可能未佩戴监测设备或设备未正常工作</li>
+        </ul>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">改善建议</div>
+        <ul>
+            <li>确保睡眠监测设备正确佩戴并正常工作</li>
+            <li>检查设备电量是否充足</li>
+            <li>如果使用手机应用监测，确保手机放置在合适位置</li>
+            <li>考虑使用更可靠的睡眠监测设备</li>
+        </ul>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">专家锐评</div>
+        <p>"没有数据就像在黑暗中摸索 - 我们无法评估你看不见的东西。建议先解决数据收集问题，然后再来评估睡眠质量。"</p>
+    </div>
+
+    <div class="footer">
+        每日睡眠评估 · 健康生活从优质睡眠开始
+    </div>
+</body>
+</html>
