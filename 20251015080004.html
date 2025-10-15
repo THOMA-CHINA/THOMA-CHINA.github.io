@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background-color: #1da1f2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .handle {
+            color: #536471;
+        }
+        .content {
+            line-height: 1.5;
+        }
+        .sleep-score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1da1f2;
+            margin: 15px 0;
+        }
+        .sleep-stages {
+            display: flex;
+            margin: 15px 0;
+            border-top: 1px solid #e6ecf0;
+            border-bottom: 1px solid #e6ecf0;
+            padding: 10px 0;
+        }
+        .stage {
+            flex: 1;
+            text-align: center;
+            padding: 5px;
+        }
+        .stage-name {
+            font-weight: bold;
+        }
+        .stage-value {
+            color: #1da1f2;
+        }
+        .issues, .recommendations, .expert-comment {
+            background-color: #f7f9fa;
+            padding: 12px;
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <div class="header">
+            <div class="avatar">ZZ</div>
+            <div>
+                <span class="username">睡眠质量评估专家</span>
+                <span class="handle">@SleepExpert</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <p>您的睡眠质量日报来啦！📊 #睡眠分析</p>
+            
+            <div class="sleep-score">
+                睡眠评分: 无法评估
+            </div>
+            
+            <div class="sleep-stages">
+                <div class="stage">
+                    <div class="stage-name">深睡</div>
+                    <div class="stage-value">无数据</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-name">浅睡</div>
+                    <div class="stage-value">无数据</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-name">REM</div>
+                    <div class="stage-value">无数据</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-name">清醒</div>
+                    <div class="stage-value">无数据</div>
+                </div>
+            </div>
+            
+            <div class="issues">
+                <div class="section-title">⚠️ 潜在问题</div>
+                <ul>
+                    <li>缺乏睡眠阶段数据，无法进行完整评估</li>
+                    <li>心率变异性数据波动较大(26.353ms到54.021ms)</li>
+                </ul>
+            </div>
+            
+            <div class="recommendations">
+                <div class="section-title">💡 改善建议</div>
+                <ul>
+                    <li>请确保佩戴睡眠监测设备并正确记录数据</li>
+                    <li>睡前1小时避免使用电子设备</li>
+                    <li>保持规律的睡眠时间表</li>
+                    <li>考虑进行放松练习来稳定心率变异性</li>
+                </ul>
+            </div>
+            
+            <div class="expert-comment">
+                <div class="section-title">🔍 专家锐评</div>
+                <p>"数据不足就像在黑暗中摸索 - 我们需要更多睡眠信息才能给出准确评估。您的心率变异性波动值得关注，建议连续监测几天获取更全面的数据。"</p>
+            </div>
+            
+            <div class="timestamp">2025年10月15日 上午8:00</div>
+        </div>
+    </div>
+</body>
+</html>
