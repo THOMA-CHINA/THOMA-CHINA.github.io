@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .sleep-report {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .score {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 16px 0;
+            color: #1da1f2;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1da1f2;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-bar {
+            height: 100px;
+            width: 100%;
+            background-color: #e1e8ed;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .stage-fill {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #1da1f2;
+        }
+        .stage-label {
+            font-size: 14px;
+            color: #657786;
+        }
+        .stage-value {
+            font-weight: bold;
+        }
+        .problem, .suggestion {
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+        .problem {
+            background-color: #fff0f0;
+            border-left: 4px solid #e0245e;
+        }
+        .suggestion {
+            background-color: #f0f8ff;
+            border-left: 4px solid #1da1f2;
+        }
+        .expert-comment {
+            font-style: italic;
+            color: #657786;
+            padding: 12px;
+            background-color: #f7f9fc;
+            border-radius: 12px;
+        }
+        .timestamp {
+            color: #657786;
+            font-size: 14px;
+            margin-top: 16px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="sleep-report">
+        <div class="header">
+            <div class="avatar">ZZ</div>
+            <div class="title">睡眠质量评估日报</div>
+        </div>
+        
+        <div class="score">数据不足</div>
+        
+        <div class="section">
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="sleep-stages">
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%;"></div>
+                    </div>
+                    <div class="stage-label">深睡</div>
+                    <div class="stage-value">0h 0m (0%)</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%;"></div>
+                    </div>
+                    <div class="stage-label">浅睡</div>
+                    <div class="stage-value">0h 0m (0%)</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%;"></div>
+                    </div>
+                    <div class="stage-label">REM</div>
+                    <div class="stage-value">0h 0m (0%)</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%;"></div>
+                    </div>
+                    <div class="stage-label">清醒</div>
+                    <div class="stage-value">0h 0m (0%)</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">潜在问题</div>
+            <div class="problem">
+                无法生成完整的睡眠分析报告，因为缺少关键的睡眠阶段数据。
+            </div>
+            <div class="problem">
+                心率变异性数据显示从晚上18:49到21:51期间有显著下降(从73.554ms降至27.366ms)，可能表明压力水平增加。
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">改善建议</div>
+            <div class="suggestion">
+                确保佩戴睡眠监测设备一整晚，以获得完整的睡眠数据。
+            </div>
+            <div class="suggestion">
+                心率变异性下降可能表明睡前压力增加，建议尝试放松技巧如深呼吸或冥想。
+            </div>
+            <div class="suggestion">
+                血氧水平正常(100%)，这是一个积极的指标。
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">专家锐评</div>
+            <div class="expert-comment">
+                "数据不足就像在黑暗中摸索 - 我们只能看到片段。建议今晚确保设备正常工作并佩戴整晚。心率变异性的波动值得关注，可能是睡前活动的反映。"
+            </div>
+        </div>
+        
+        <div class="timestamp">2025-10-16 08:00:04</div>
+    </div>
+</body>
+</html>
