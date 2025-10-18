@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #536471;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1da1f2;
+            margin-bottom: 10px;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-bar {
+            height: 100px;
+            width: 20px;
+            margin: 0 auto;
+            background-color: #e1e8ed;
+            position: relative;
+        }
+        .stage-fill {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #1da1f2;
+        }
+        .stage-label {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .issues, .recommendations, .expert-comment {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e1e8ed;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .footer {
+            color: #536471;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">ZZ</div>
+        <div>
+            <div class="username">睡眠质量评估专家</div>
+            <div class="handle">@SleepDoctor</div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="score">睡眠评分: 无法评估</div>
+        <p>由于缺乏详细的睡眠阶段数据，无法给出准确的睡眠评分。</p>
+        
+        <div class="sleep-stages">
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%;"></div>
+                </div>
+                <div class="stage-label">深睡: 无数据</div>
+            </div>
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%;"></div>
+                </div>
+                <div class="stage-label">浅睡: 无数据</div>
+            </div>
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%;"></div>
+                </div>
+                <div class="stage-label">REM: 无数据</div>
+            </div>
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%;"></div>
+                </div>
+                <div class="stage-label">清醒: 无数据</div>
+            </div>
+        </div>
+        
+        <div class="issues">
+            <div class="section-title">潜在问题</div>
+            <ul>
+                <li>缺乏详细的睡眠阶段数据，无法评估睡眠质量</li>
+                <li>心率变异性数据显示波动较大(21.9ms到46.2ms)，可能反映压力水平变化</li>
+            </ul>
+        </div>
+        
+        <div class="recommendations">
+            <div class="section-title">改善建议</div>
+            <ul>
+                <li>确保佩戴睡眠监测设备并正确记录数据</li>
+                <li>睡前1小时避免使用电子设备</li>
+                <li>保持规律的睡眠时间表</li>
+                <li>考虑进行放松练习(如冥想)来稳定心率变异性</li>
+            </ul>
+        </div>
+        
+        <div class="expert-comment">
+            <div class="section-title">专家锐评</div>
+            <p>"没有数据就像在黑暗中睡觉 - 我们不知道发生了什么！建议检查您的睡眠监测设备，确保它能正确记录您的睡眠数据。从有限的心率变异性数据来看，您的身体似乎经历了从紧张到放松的转变过程。"</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        2025年10月18日 · 上午8:00 · 睡眠质量评估日报
+    </div>
+</body>
+</html>
