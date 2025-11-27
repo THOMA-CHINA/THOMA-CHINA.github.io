@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .sleep-report {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .sleep-score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1d9bf0;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eff3f4;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sleep-stage {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .stage-name {
+            color: #536471;
+        }
+        .stage-value {
+            font-weight: bold;
+        }
+        .problem-item, .advice-item {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .problem-item:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+        }
+        .advice-item:before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+        .expert-comment {
+            background-color: #f7f9fa;
+            padding: 15px;
+            border-radius: 12px;
+            font-style: italic;
+            color: #536471;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #536471;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sleep-report">
+        <div class="header">
+            <div>
+                <div class="date">2025年11月27日</div>
+                <div style="font-size: 24px; font-weight: bold;">睡眠质量日报</div>
+            </div>
+            <div class="sleep-score">--</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="sleep-stage">
+                <span class="stage-name">深睡眠</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">浅睡眠</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">REM睡眠</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+            <div class="sleep-stage">
+                <span class="stage-name">清醒时间</span>
+                <span class="stage-value">-- (--%)</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">潜在问题</div>
+            <div class="problem-item">未检测到有效睡眠数据</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">改善建议</div>
+            <div class="advice-item">请确保佩戴设备正确并重新记录睡眠数据</div>
+            <div class="advice-item">检查设备电量是否充足</div>
+            <div class="advice-item">确保睡眠环境安静舒适</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">专家锐评</div>
+            <div class="expert-comment">
+                "无法评估睡眠质量，因为系统没有收到任何有效数据。建议检查设备连接和数据记录设置。良好的睡眠监测需要完整的数据支持，就像医生需要完整的检查报告才能做出准确诊断一样。"
+            </div>
+        </div>
+
+        <div class="footer">
+            每日睡眠质量报告 · 数据仅供参考 · 如有疑问请咨询专业医生
+        </div>
+    </div>
+</body>
+</html>
