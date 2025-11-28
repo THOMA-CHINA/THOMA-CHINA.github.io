@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .sleep-report {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .score {
+            font-size: 42px;
+            font-weight: bold;
+            color: #1d9bf0;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sleep-stage {
+            display: flex;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .stage-name {
+            width: 100px;
+            color: #536471;
+        }
+        .stage-bar {
+            flex-grow: 1;
+            height: 20px;
+            background-color: #eff3f4;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        .stage-fill {
+            height: 100%;
+            background-color: #1d9bf0;
+            border-radius: 10px;
+        }
+        .stage-value {
+            width: 60px;
+            text-align: right;
+        }
+        .problem, .suggestion {
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .problem {
+            background-color: #fce8e6;
+            color: #d93025;
+        }
+        .suggestion {
+            background-color: #e8f5fe;
+            color: #1d9bf0;
+        }
+        .expert-comment {
+            font-style: italic;
+            padding: 15px;
+            background-color: #f7f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #1d9bf0;
+        }
+        .divider {
+            height: 1px;
+            background-color: #eff3f4;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sleep-report">
+        <div class="header">
+            <div>
+                <div class="date">睡眠报告 · 2025年11月28日</div>
+                <div style="font-size: 20px; font-weight: bold;">你的睡眠质量评估</div>
+            </div>
+            <div class="score">--</div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="section">
+            <div class="section-title">睡眠阶段分析</div>
+            <p style="color: #536471;">未检测到有效睡眠数据</p>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="section">
+            <div class="section-title">潜在问题</div>
+            <div class="problem">
+                ⚠️ 未记录到睡眠数据，无法评估睡眠质量
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">改善建议</div>
+            <div class="suggestion">
+                💡 请确保佩戴睡眠监测设备并正确连接
+            </div>
+            <div class="suggestion">
+                💡 检查设备电量是否充足
+            </div>
+            <div class="suggestion">
+                💡 确保睡眠环境适合数据采集
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="section">
+            <div class="section-title">专家锐评</div>
+            <div class="expert-comment">
+                "没有数据就没有真相。建议今晚重新尝试记录睡眠数据，记得睡前检查设备状态。优质睡眠从准确监测开始！"
+            </div>
+        </div>
+    </div>
+</body>
+</html>
