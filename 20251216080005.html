@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .user-info {
+            flex: 1;
+        }
+        .username {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .handle {
+            color: #536471;
+            font-size: 14px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+        }
+        .content {
+            line-height: 1.5;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 16px 0;
+            color: #1da1f2;
+        }
+        .chart {
+            background-color: #f0f4f8;
+            border-radius: 12px;
+            padding: 12px;
+            margin: 16px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin: 16px 0 8px;
+        }
+        .problem, .advice, .comment {
+            background-color: #f8f9fa;
+            border-left: 4px solid #1da1f2;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .comment {
+            border-left-color: #17bf63;
+            font-style: italic;
+        }
+        .divider {
+            height: 1px;
+            background-color: #e1e8ed;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <div class="header">
+            <div class="avatar">Z</div>
+            <div class="user-info">
+                <div class="username">睡眠质量评估专家</div>
+                <div class="handle">@SleepQualityExpert</div>
+            </div>
+            <div class="timestamp">2025年12月16日</div>
+        </div>
+        
+        <div class="content">
+            <p>早上好！这是您昨晚的睡眠质量评估报告：</p>
+            
+            <div class="score">睡眠分数: 72/100</div>
+            
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="chart">
+                <p>⚠️ 睡眠阶段数据缺失</p>
+            </div>
+            
+            <div class="section-title">血氧水平</div>
+            <div class="chart">
+                <p>平均血氧: 95% (正常范围)</p>
+                <p>最低血氧: 92% (凌晨3:02和6:02)</p>
+            </div>
+            
+            <div class="section-title">心率变异性(HRV)</div>
+            <div class="chart">
+                <p>平均HRV: 42.6ms (波动较大)</p>
+                <p>最低HRV: 26.9ms (凌晨1:28)</p>
+                <p>最高HRV: 56.8ms (凌晨3:01)</p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="section-title">潜在问题</div>
+            <div class="problem">
+                <p>1. 睡眠阶段数据缺失，无法评估各阶段睡眠质量</p>
+                <p>2. 凌晨时段出现多次血氧下降至92%，可能存在轻度呼吸问题</p>
+                <p>3. HRV波动较大，显示睡眠期间压力水平变化明显</p>
+            </div>
+            
+            <div class="section-title">改善建议</div>
+            <div class="advice">
+                <p>1. 检查睡眠监测设备，确保能记录完整的睡眠阶段数据</p>
+                <p>2. 尝试侧卧睡姿，可能有助于改善夜间血氧水平</p>
+                <p>3. 睡前避免咖啡因和酒精，有助于稳定HRV</p>
+                <p>4. 考虑进行睡眠呼吸筛查，排除轻度睡眠呼吸暂停</p>
+            </div>
+            
+            <div class="section-title">专家锐评</div>
+            <div class="comment">
+                <p>"虽然缺乏睡眠阶段数据，但从血氧和HRV来看，您的睡眠质量中等。凌晨的血氧下降值得关注，但不必过度担心。建议优先解决数据收集问题，以便下次能提供更全面的评估。"</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
