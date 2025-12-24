@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fa;
+            color: #0f1419;
+        }
+        .sleep-report {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+            color: #1da1f2;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-bar {
+            height: 100px;
+            width: 30px;
+            margin: 0 auto 8px;
+            background-color: #e1e8ed;
+            position: relative;
+        }
+        .stage-fill {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #1da1f2;
+        }
+        .problems, .advice, .expert {
+            background-color: #f7f9fa;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .expert {
+            border-left: 4px solid #1da1f2;
+        }
+        .footer {
+            color: #657786;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sleep-report">
+        <div class="header">
+            <div class="avatar">ZZ</div>
+            <div class="title">睡眠质量评估日报</div>
+        </div>
+        
+        <div class="score">--</div>
+        
+        <div class="section">
+            <div class="section-title">睡眠阶段分析</div>
+            <div class="sleep-stages">
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%"></div>
+                    </div>
+                    <div>深睡</div>
+                    <div>--%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%"></div>
+                    </div>
+                    <div>浅睡</div>
+                    <div>--%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%"></div>
+                    </div>
+                    <div>REM</div>
+                    <div>--%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="height: 0%"></div>
+                    </div>
+                    <div>清醒</div>
+                    <div>--%</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">潜在问题</div>
+            <div class="problems">
+                未检测到有效睡眠数据，无法分析潜在问题
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">改善建议</div>
+            <div class="advice">
+                1. 请确保正确佩戴睡眠监测设备<br>
+                2. 检查设备电量是否充足<br>
+                3. 确认设备与手机连接正常
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">专家锐评</div>
+            <div class="expert">
+                "看起来今晚你的睡眠监测设备比你先睡着了。建议重新检查设备设置，明天再战！"
+            </div>
+        </div>
+        
+        <div class="footer">
+            2025年12月25日 · 睡眠质量评估日报
+        </div>
+    </div>
+</body>
+</html>
