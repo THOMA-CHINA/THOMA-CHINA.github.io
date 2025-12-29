@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .container {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #536471;
+            margin-left: 4px;
+        }
+        .timestamp {
+            color: #536471;
+            font-size: 14px;
+            margin-top: 2px;
+        }
+        .content {
+            line-height: 1.5;
+        }
+        .score {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 16px 0;
+            color: #1da1f2;
+        }
+        .sleep-stages {
+            margin: 16px 0;
+        }
+        .stage {
+            display: flex;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .stage-name {
+            width: 100px;
+        }
+        .stage-bar {
+            height: 20px;
+            background-color: #e1e8ed;
+            border-radius: 10px;
+            flex-grow: 1;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+        .stage-fill {
+            height: 100%;
+            border-radius: 10px;
+        }
+        .stage-percent {
+            width: 50px;
+            text-align: right;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .problems, .recommendations, .expert-comment {
+            background-color: #f7f9fc;
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+        .divider {
+            height: 1px;
+            background-color: #eff3f4;
+            margin: 16px 0;
+        }
+        .footer {
+            color: #536471;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">ZZ</div>
+            <div>
+                <div>
+                    <span class="username">睡眠质量评估专家</span>
+                    <span class="handle">@SleepQualityPro</span>
+                </div>
+                <div class="timestamp">2025年12月29日 · 08:00</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <p>早上好！这是您昨晚的睡眠质量评估报告：</p>
+            
+            <div class="score">⚠️ 数据不足</div>
+            
+            <div class="sleep-stages">
+                <div class="stage">
+                    <div class="stage-name">深睡眠</div>
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="width: 0%; background-color: #1da1f2;"></div>
+                    </div>
+                    <div class="stage-percent">0%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-name">浅睡眠</div>
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="width: 0%; background-color: #17bf63;"></div>
+                    </div>
+                    <div class="stage-percent">0%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-name">REM睡眠</div>
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="width: 0%; background-color: #e0245e;"></div>
+                    </div>
+                    <div class="stage-percent">0%</div>
+                </div>
+                <div class="stage">
+                    <div class="stage-name">清醒时间</div>
+                    <div class="stage-bar">
+                        <div class="stage-fill" style="width: 0%; background-color: #794bc4;"></div>
+                    </div>
+                    <div class="stage-percent">0%</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">潜在问题</div>
+                <div class="problems">
+                    <p>⚠️ 未检测到有效的睡眠数据</p>
+                    <p>• 可能设备未正确佩戴或记录</p>
+                    <p>• 睡眠监测可能被中断</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">改善建议</div>
+                <div class="recommendations">
+                    <p>🔧 建议检查睡眠监测设备</p>
+                    <p>• 确保设备正确佩戴并开启</p>
+                    <p>• 检查设备电量是否充足</p>
+                    <p>• 确认设备与手机连接正常</p>
+                    <p>• 尝试重置设备并重新记录</p>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="section">
+                <div class="section-title">专家锐评</div>
+                <div class="expert-comment">
+                    <p>"没有数据就像在黑暗中摸索 - 我们无法评估您昨晚的睡眠质量。建议先解决设备问题，明天再为您提供专业的睡眠分析。"</p>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div>睡眠质量日报</div>
+                <div>#睡眠监测 #健康生活</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
