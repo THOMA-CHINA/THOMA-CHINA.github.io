@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>睡眠质量评估日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #0f1419;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1da1f2;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .date {
+            color: #536471;
+            font-size: 14px;
+        }
+        .tweet {
+            background-color: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1da1f2;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0f1419;
+        }
+        .sleep-stages {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stage {
+            text-align: center;
+            flex: 1;
+        }
+        .stage-bar {
+            height: 100px;
+            width: 20px;
+            margin: 0 auto;
+            background-color: #e1e8ed;
+            position: relative;
+            border-radius: 10px;
+        }
+        .stage-fill {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .stage-label {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #536471;
+        }
+        .stage-percent {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .problems, .advice, .expert {
+            margin-bottom: 15px;
+        }
+        .footer {
+            color: #536471;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="avatar">ZZ</div>
+        <div>
+            <div class="title">睡眠质量评估日报</div>
+            <div class="date">2026年1月3日</div>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">今日睡眠分数</div>
+        <div class="score">--</div>
+        <div style="text-align: center; color: #536471;">数据不足，无法计算睡眠分数</div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">睡眠阶段分析</div>
+        <div class="sleep-stages">
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%; background-color: #1da1f2;"></div>
+                </div>
+                <div class="stage-percent">0%</div>
+                <div class="stage-label">深睡</div>
+            </div>
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%; background-color: #17bf63;"></div>
+                </div>
+                <div class="stage-percent">0%</div>
+                <div class="stage-label">浅睡</div>
+            </div>
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%; background-color: #f45d22;"></div>
+                </div>
+                <div class="stage-percent">0%</div>
+                <div class="stage-label">REM</div>
+            </div>
+            <div class="stage">
+                <div class="stage-bar">
+                    <div class="stage-fill" style="height: 0%; background-color: #794bc4;"></div>
+                </div>
+                <div class="stage-percent">0%</div>
+                <div class="stage-label">清醒</div>
+            </div>
+        </div>
+        <div style="text-align: center; color: #536471;">未检测到有效睡眠数据</div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">潜在问题</div>
+        <div class="problems">
+            <p>⚠️ 未检测到睡眠数据，可能是以下原因导致：</p>
+            <ul>
+                <li>未佩戴睡眠监测设备</li>
+                <li>设备未正确连接或开启</li>
+                <li>监测设备电量耗尽</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">改善建议</div>
+        <div class="advice">
+            <p>🔧 为了获得准确的睡眠分析，建议：</p>
+            <ul>
+                <li>确保睡眠监测设备已正确佩戴并开启</li>
+                <li>检查设备电量是否充足</li>
+                <li>保持设备与手机的连接稳定</li>
+                <li>尝试重启设备或重新同步数据</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tweet">
+        <div class="section-title">专家锐评</div>
+        <div class="expert">
+            <p>🧐 <strong>睡眠专家点评：</strong></p>
+            <p>"没有数据就像在黑暗中摸索 - 我们无法评估您昨晚的睡眠质量。建议您检查监测设备，确保今晚能收集到完整的睡眠数据。记住，连续的数据记录才能帮助我们更好地了解您的睡眠模式并提供个性化建议。"</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        #睡眠健康 #数据不足 #请检查设备
+    </div>
+</body>
+</html>
